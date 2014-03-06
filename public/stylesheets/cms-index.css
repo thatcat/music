@@ -1,0 +1,311 @@
+﻿/* 酸奶后台管理系统主页 样式 */
+body{
+	font-size: 15px;
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+}
+@font-face {
+ 	font-family: "汉仪丫丫";
+ 	src: url('../images/font/hanyi.eot') format('eot');
+  	src: local('汉仪丫丫'),
+  	url('../images/font/hanyi.woff') format('woff'), 
+  	url('../images/font/hanyi.ttf') format('truetype'),
+ 	url('../images/font/hanyi.svg') format('svg');
+} 
+.header{
+	width:100%;
+	height:200px;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.banner{
+	width:960px;
+	height:200px;   
+	margin:0 auto;
+	background-color: #337A5B;
+	background-image: url('../images/grid-pattern.png');
+}
+.banner-title{
+	font-family:"汉仪丫丫","微软雅黑", "宋体", "黑体", Arial, Sans-serif; 
+	font-size:50px; 
+	font-weight: bold;
+	color:#fff;
+	text-decoration: none;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.milk-theme{
+	font-family:"汉仪丫丫","微软雅黑", "宋体", "黑体", Arial, Sans-serif; 
+	font-size:25px; 
+	color:#fff;
+	position: absolute;
+	margin-left: 250px;
+	margin-top: 110px;
+}
+/* header 中主体部分样式 */
+.cms-title{
+	font-family:"汉仪丫丫","微软雅黑", "宋体", "黑体", Arial, Sans-serif; 
+	font-size:30px; 
+	font-weight: bold;
+	color:#fff;
+	text-decoration: none;
+	position: absolute;
+	margin-left: 150px;
+	margin-top: 20px;
+}
+.admin-login{
+	float: right;
+	margin-right: 40px;
+	margin-top: 10px;
+	color:#fff;
+}
+.admin-login a{
+	text-decoration: none;
+	color:#fff;
+}
+.login-out{
+	margin-left: 8px;
+}
+.admin-login a:hover{
+	color:#000;
+}
+.container{
+	width:960px;
+	height:auto;
+	position: relative;
+	margin:0 auto;
+	margin-top: 200px;
+	border: 1px solid #ccc;
+	background: #fff;
+	box-shadow: 1px 3px 5px #ddd;
+}
+/* 后台管理各大内容模块 */
+.nav-bar{
+	width:960px;
+	/*height:120px;*/
+	/*border:1px solid #eee;*/
+	margin: 0 auto;
+	/*background-color: rgb(240,240,241);*/
+}
+
+.nav-tabs .actived a {
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #fff;
+}
+
+.cms-lists{
+	list-style-type: none;
+	/*border-bottom: 1px solid #ccc;*/
+	padding-bottom: 1px;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.cms-list {
+	list-style-type: none;
+	padding-left: 0;
+	float: left;
+	margin-left: 60px;
+}
+.cms-lists li, .cms-list li{
+	float: left;
+	display: inline;
+	width:200px;
+	height:90px;
+	margin-right: 15px;
+	background-color: #fff;
+	padding: 0;
+	margin-bottom: -1px;
+}
+.cms-list li{
+	border: 1px solid #ccc;
+	margin-right: 0;
+	border-collapse: collapse; 
+}
+.order-cms a, .words-cms a, .news-cms a{
+	width:200px;
+	height:90px;
+	position: absolute;
+	text-align: center;
+	line-height: 90px;
+	text-decoration: none;
+	color:#000;
+	font-size: 19px;
+	font-family:"汉仪丫丫","微软雅黑", "宋体", "黑体", Arial, Sans-serif; 
+	font-weight: bold;
+}
+.order-cms a {
+	/*background: #5FEB3B;*/
+	color: #000;
+	cursor: default;
+}
+.order-cms a:hover, .words-cms a:hover, .news-cms a:hover{
+	/*background-color: #5FEB3B;*/
+	color: #000;
+	/*font-size: 20px;*/
+}
+/* 下面是酸奶订单 */
+.tabs-left{
+	height:auto;
+}
+/* tabs 标签修正 */
+.nav-tabs li a{
+	text-decoration: none;
+	color:#000;
+}
+.nav-tabs {
+	/*border-bottom: 1px solid #333;*/
+}
+.nav-tabs > li > a {
+  	padding: 0;
+  	-webkit-border-radius: 0px;
+  	-moz-border-radius: 0px;
+  	border-radius: 0px;
+	display: inline-block;
+	width: 198px;
+	height: 88px;
+	line-height: 88px;
+	text-align: center;
+}
+
+.nav-tabs > .active > a {
+  	color: #555;
+  	font-weight: bold;
+  	font-size: 16px;
+  	background-color: #fff;
+  	border: 1px solid #ddd;
+  	border-bottom-color: transparent;
+  	cursor: default;
+
+}
+.tabbable .nav-tabs .active a:hover {
+	background-color: #fff;
+}
+/* tabs 下的订单表格内容 */
+.order-info{
+	text-indent: 0px;
+	height:30px;
+	line-height: 30px;
+	margin-top: 0px;
+}
+.order-info span{
+	margin-right: 10px;
+	margin-left: 5px;
+	font-size: 16px;
+}
+#unsolve table, #solved table{
+	border-collapse:collapse;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+#unsolve table tr th, #unsolve table tr td, #solved table tr th, #solved table tr td{
+	height:30px;
+	border:1px solid #ddd;
+	text-align: center;
+}
+#unsolve table tr td, #solved table tr td{
+	height:35px;
+	font-size: 14px;
+	padding:5px;
+	text-align: center;
+}
+#unsolve table tr th:first-child {
+	width: 40px;
+}
+#unsolve table tr th:nth-child(2) {
+	
+}
+#unsolve table tr th:nth-child(3) {
+	width: 30px;
+}
+#unsolve table tr th:nth-child(4) {
+
+}
+#unsolve table tr th:nth-child(5) {
+
+}
+#unsolve table tr th:nth-child(6) {
+	width: 70px;
+}
+#unsolve table tr th:nth-child(7) {
+	width: 100px;
+}
+#unsolve table tr th:nth-child(8) {
+	width: 125px;
+}
+#unsolve table tr th:nth-child(9) {
+}
+
+#solved table tr th:first-child{
+	width:80px;
+}
+#solved table tr th:nth-child(2){
+	width:90px;
+}
+#solved table tr th:nth-child(3){
+	width:150px;
+}
+#solved table tr th:nth-child(4){
+	width:45px;
+}
+#solved table tr th:nth-child(5){
+	width:120px;
+}
+#solved table tr th:nth-child(6){
+	width:160px;
+}
+#solved table tr th:nth-child(7){
+	width:125px;
+}
+#solved table tr th:nth-child(8){
+	width:130px;
+}
+#solved table tr th:nth-child(9){
+	width:230px;
+}
+.badge {
+	padding: 10px;
+}
+.badges {
+	padding: 5px 10px;
+}
+#change_password,#uploadPhoto {
+	width: 959px;
+	margin: 0 auto;
+	border-left: 1px solid #ccc;
+}
+#change_password form, #uploadPhoto form{
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+	padding-top: 90px;
+	font-size: 20px;
+}
+#uploadPhoto form {
+	width: 410px;
+}
+#uploadPhoto {
+	display: none;
+}
+#uploadPhoto .input-control {
+	margin-bottom: 30px;
+}
+#uploadPhoto .input-control input[type="submit"] {
+	padding: 5px 10px;
+	margin-left: 100px;
+}
+#change_password input {
+	line-height: 30px;
+}
+#change_password .signup {
+	padding: 5px 10px;
+	margin-left: 90px;
+}
+#showPic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(77,77,77,0.5);
+	z-index: 1000;
+	display: none;
+}

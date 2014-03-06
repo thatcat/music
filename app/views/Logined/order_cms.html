@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>国产汽车网后台管理</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            
+  <link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="/public/stylesheets/index.css" rel="stylesheet" type="text/css" />
+  <link href="/public/stylesheets/cms-index.css" rel="stylesheet" type="text/css" />
+	<script src="/public/javascripts/jquery1.83.js" type="text/javascript"></script>
+  <script src="/public/javascripts/bootstrap-tab.js" type="text/javascript"></script>
+	<script src="/public/javascripts/order_cms.js" type="text/javascript"></script>
+  <style>
+    .cms-list a:hover {
+        background: #eee;
+        cursor: pointer;
+      }
+      .footer {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        position: absolute;
+        left: 0px;
+      }
+      .nav-bar {
+        overflow: hidden;
+      }
+      
+  </style>
+</head>
+<body>
+<div id="showPic"></div>
+	<div class="header">
+    <div class="banner">
+        <a href="index.html" class="banner-title">国产汽车网</a>
+      <span class="milk-theme">后台管理</span>
+    <div class="admin-login">
+      当前登录：
+            <a href="#" style="cursor:default;" class="login"> ${user.username}</a>
+            | 
+            积分：${user.integration}
+            |
+            <a href="@{Logined.logout()}" class="regist">注销</a>
+    </div>
+    </div>
+  </div>
+	<div class="container">
+<div class="nav-bar">
+			<ul class="cms-list">
+				<li>
+					<!-- 车主认证管理 -->
+					<div class="order-cms">
+						<a href="#" style="background:#eee;">车主认证管理</a>
+					</div>
+				</li>
+				<li>
+					<!-- 留言管理 -->
+					<div class="words-cms">
+						<a href="post_cms.html">留言管理</a>
+					</div>
+				</li>
+				<li>
+					<!-- 小道消息管理 -->
+					<div class="news-cms">
+						<a href="/carNews.html">添加小道消息</a>
+					</div>
+				</li>
+				<!-- 小道消息管理 -->
+				<li>
+					<div class="news-cms">
+						<a href="/addSeriesData.html">汽车数据管理</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+<!---------------------------------------------------------已处理的车主认证和还没有处理的车主认证开始----------------------------------------->
+<!--<div class="tabbable tabs-left">-->
+		<div class="tabbable tabs-top">
+			<ul  class="nav nav-tabs" style="margin-left:0;padding-left:60px;">
+                        			<li class="active"><a href="#unsolve" data-toggle="tab">未处理的认证</a></li>
+                        			<li><a href="@{order_cms()}.#solved" data-toggle="tab">已处理认证</a></li>
+                     		</ul>
+                     		<!-- 下面是车主认证内容 -->
+    			<div class="tab-content">
+    				<!-- 待处理的认证从前台页面发送到这里 -->
+                        			<div class="tab-pane active" id="unsolve">
+                        				<div class="order-info">
+                                            【 当前未处理的认证：<span>${userUndealList.size()}</span>单 】      					
+                        				</div>
+                        				<table id="tableSelect1">
+                        					<tr>
+                        						<th>标号</th>
+                                                <th>姓名</th>
+												<th>积分</th>
+                                                <th>汽车证明图片</th>
+												<th>身份证图片路径</th>
+                                                <th>是否车主</th>												
+												<th>申请认证日期</th>
+												<th>上一次认证内容</th>
+												 <th>这次认证内容</th>
+												<th colspan="2">确定认证</th>
+                        					</tr>
+                        					#{list items:userUndealList,as:'undealList'}
+                                                <tr id="${undealList.id}">
+                                                    <td>${undealList.id}</td>
+                                                    <td>${undealList.username}</td>
+													<td>${undealList.integration}</td>
+                                                    <td><img src="${undealList.authPictiurePath}" width="150" height="100"/></td>
+													<td><img src="${undealList.idcardPictiurePath}" width="150" height="100"/></td>
+                                                    <td>${undealList.isCarOwner} </td>
+													<td>${undealList.applyDate} </td>
+													<td>${undealList.authType} </td>
+													<th><textarea style="height:100px" id="authType" name="authType"></textarea></th>
+													
+                                                    <td><span class="badges btn-info btn highlight ml10" onclick="cancel_item(${undealList.id}, true);">通过</span></td>
+													<td><span class="badges btn-info btn highlight ml10" onclick="cancel_item(${undealList.id},false);">不通过</span></td>
+                                                </tr>
+                                            #{/list}
+                        				</table>
+                        			</div>
+                        			<!-- 已经处理的认证放在下面 -->
+                        			<div class="tab-pane" id="solved">
+                        				<div class="order-info">
+                                            【 当前已处理的车主认证：<span>${userDealedList.size()}</span>单 】        					
+                        				</div>
+                        				<table>
+                        					<caption></caption>
+                        					<tr>
+                        						<th>标号</th>
+                                                <th>姓名</th>
+                                                <th>汽车证明图片</th>
+												<th>身份证图片</th>
+                                                <th>是否车主</th>
+												<th>认证内容</th>
+												<th>认证日期</th>
+                        <th>积分</th>
+												<th>撤消</th>
+                        					</tr>
+                        					#{list items:userDealedList,as:'dealedList'}
+                                                <tr id="${dealedList.id}">
+                                                    <td>${dealedList.id}</td>
+                                                    <td>${dealedList.username}</td>
+													<td><img src="${dealedList.authPictiurePath}" width="200" height="120"/></td>
+													<td><img src="${dealedList.idcardPictiurePath}" width="200" height="120"/></td>
+                                                    <td>${dealedList.isCarOwner}</td>
+													<td>${dealedList.authType}</td>
+													<td>${dealedList.authDate}</td>
+													<td>${dealedList.integration}</td>
+                                                    <td><button class="badge btn-info btn highlight ml10" onclick="dele_item(${dealedList.id})">撤销认证</button></td>
+                                                </tr>
+                                            #{/list}
+                        				</table>
+                        			</div>
+            			</div>
+		</div>
+<!---------------------------------------------------------已处理的车主认证和还没有处理的车主认证结束---------------------------------------->
+	</div>
+            <script src="/public/javascripts/jquery1.83.js" type="text/javascript"></script>
+             <script src="/public/javascripts/bootstrap-tab.js" type="text/javascript"></script>
+             <script>
+               function cancel_item(id, carOwner){
+				   var authType = document.getElementById("authType").value;
+                    if(confirm("你确定要标记为处理吗?")==1){
+                        $.ajax({
+                           type:'post',
+                           url:'/Logined/deal_refresh',
+                           data:{itemId:id, authType: authType, isCarOwner:carOwner} ,
+                           dataType:'json',
+                           success:function(data){
+                               if(data.status==200){
+                                   $("#"+id).hide(function(){alert("标记处理成功!");} );
+                                    location.reload();
+                               }else{
+                                   alert("标记处理失败!");
+                               }
+                           },
+                           error:function(){
+                              alert("标记处理失败!");
+                           }
+                           })       
+                    }
+                }
+                function dele_item(id){
+                    if(confirm("你确定要撤销吗?")==1){
+                        $.ajax({
+                           type:'post',
+                           url:'/Logined/auth_delete',
+                           data:{
+                               itemId:id
+                           },
+                           dataType:'json',
+                           success:function(data){
+                               if(data.status==200){
+                                   $("#"+id).hide(function(){alert("撤销认证成功!");} );
+                               }else{
+                                   alert("撤销认证失败!");
+                               }
+                           },
+                           error:function(){
+                              alert("撤销认证失败!");
+                           }
+                           })       
+                    }
+                }
+             </script>
+  <div class="footer">
+    <p>COPYRIGHT © 2012 - 2013 DESIGNED BY HCier<p>
+  </div>
+</body>
+</html>

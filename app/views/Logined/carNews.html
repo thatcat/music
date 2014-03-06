@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>国产汽车网后台管理</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            
+	<link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="/public/stylesheets/cms-index.css" rel="stylesheet" type="text/css" />
+	<link href="/public/stylesheets/index.css" rel="stylesheet" type="text/css" />
+	<script src="/public/javascripts/jquery1.83.js" type="text/javascript"></script>
+  <script src="/public/javascripts/bootstrap-tab.js" type="text/javascript"></script>
+  <script src="/public/javascripts/order_cms.js" type="text/javascript"></script>
+  <script src="/public/javascripts/editor/editor_config.js" type="text/javascript"></script>
+  <script src="/public/javascripts/editor/editor_all.js" type="text/javascript"></script>
+  <style>
+    .cms-list a:hover {
+      background: #eee;
+      cursor: pointer;
+    }
+    #message-box {
+      margin-top: 30px;
+    }
+    #message-box .input-control {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    #message-box .input-control .input-box {
+      /*margin-left: 22px;*/
+      width: 500px;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+	<div class="header">
+    <div class="banner">
+        <a href="index.html" class="banner-title">国产汽车网</a>
+      <span class="milk-theme">后台管理</span>
+    <div class="admin-login">
+      当前登录：
+            <a href="#" style="cursor:default;" class="login"> ${user.username}</a>
+            | 
+            积分：${user.integration}
+            |
+            <a href="@{Logined.logout()}" class="regist">注销</a>
+    </div>
+  </div>
+  </div>
+	<div class="container" style="margin-top:200px;">
+  <div class="nav-bar" style="overflow:hidden;">
+		<ul class="cms-list">
+			<li>
+				<!-- 车主认证管理 -->
+				<div class="order-cms">
+					<a href="order_cms.html">车主认证管理</a>
+				</div>
+			</li>
+			<li>
+				<!-- 留言管理 -->
+				<div class="words-cms">
+					<a href="post_cms.html">留言管理</a>
+				</div>
+			</li>
+			<li>
+				<!-- 小道消息管理 -->
+				<div class="news-cms">
+					<a href="#" style="background: #eee;cursor:default">添加小道消息</a>
+				</div>
+			</li>
+			<!-- 小道消息管理 -->
+			<li>
+				<div class="news-cms">
+					<a href="/addSeriesData.html">汽车数据管理</a>
+				</div>
+			</li>
+		</ul>
+  </div>
+  <div class="content-box">
+    <form id="message-box" method="post" action="Application/test" enctype="application/x-www-form-urlencoded">
+      <div class="input-control">
+        <!-- <label for="title">标题</label> -->
+        <input type="text" class="input-box" id="title" name="title" placeholder="请输入标题..." required />
+      </div>
+      <div class="input-control">
+        <label for="content"></label>
+        <script type="text/plain" id="content"  name="content" style="width: 960px;">请输入要发送的内容</script>
+          <script>
+              var editor = new UE.ui.Editor({ initialFrameWidth:958 });
+              editor.render("content");
+          </script>
+      </div>
+      <div class="input-control">
+        <input class="btn btn-info" type="submit" value="发送" />
+      </div>
+    </form>
+  </div>
+</div>
+<div class="footer">
+    <p>COPYRIGHT © 2012 - 2013 DESIGNED BY HCier<p>
+  </div>
+</body>
+</html>

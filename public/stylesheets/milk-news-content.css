@@ -1,0 +1,61 @@
+/* 酸奶新闻具体内容 页面样式 */
+@import url(index.css);
+.container{
+	margin-top: 215px;
+}
+.news-content-area{
+	width:900px;
+	height:auto;
+	border:1px solid #ddd;
+	margin:0px auto;
+	background-color: #fff;
+}
+.news-content-area h1{
+	height: 35px;
+	line-height: 35px;
+	font-family: "汉仪丫丫";
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 5px;
+	color: #2DD700;
+}
+.back-to-lists{
+	float: right;
+	margin-right: 20px;
+	margin-top: -42px;
+	color:#000;
+}
+.back-to-lists:hover{
+	color:rgb(0,152,255);
+	text-decoration: none;
+}
+.news-title{
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+.news-edit-detail{
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+.news-edit-date{
+	margin-right: 10px;
+}
+.news-content{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+.news-content-font{
+	line-height: 28px;
+	text-indent: 30px;
+}
+.news-content-image{
+	text-align: center;
+}
+/* 下面是图片的初始化宽度和高度，另外可以在 html 中按需求重新设置 */
+.news-content-image img{
+	width:600px;
+	height:400px;
+}

@@ -1,0 +1,81 @@
+/* 酸奶企业动态页面样式 */
+@import url(index.css);
+.container{
+	margin-top: 215px;
+}
+.milk-news-area{
+	width:900px;
+	height:auto;
+	border:1px solid #ddd;
+	margin:0px auto;
+	background-color: #fff;
+}
+.milk-news-area h1{
+	height: 35px;
+	line-height: 35px;
+	font-family: "汉仪丫丫";
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 5px;
+	color: #2DD700;
+}
+.hot-news{
+	margin-left: 16px;
+	margin-bottom: 22px;
+}
+.hot-news p a{
+	text-decoration: none;
+	color:#000;
+}
+.hot-news p a:hover{
+	color:rgb(0,152,255);
+}
+.common-news{
+	margin-left: 0px;
+}
+.common-news ul{
+	list-style-type: none;
+}
+.common-news ul li div{
+	margin-left: -16px;
+	height:32px;
+}
+.common-news ul li div span{
+	float: right;
+	margin-right: 30px;
+}
+.common-news ul li div a{
+	text-decoration: none;
+	color:#000;
+}
+.common-news ul li div a:hover{
+	color:rgb(0,152,255);
+}
+.common-news .icon-tag{
+	margin-right: 3px;
+}
+/* 分页条样式 */
+#p1 {
+	text-align: center;
+	margin-top:25px;
+	margin-bottom:35px;
+}
+#p1 a {
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 14px;
+	margin:6px;
+	padding:2px 7px 2px 7px; 
+	text-decoration:none;
+	color:#000;
+	border:1px solid #ccc;
+}
+.current {
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin:6px;
+	padding:4px 7px 2px 7px; 
+	text-decoration:none;
+	background-color:#5FEB3B;
+	color:#fff;
+}

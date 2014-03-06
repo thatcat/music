@@ -1,0 +1,146 @@
+@import url(index.css);
+/* 酸奶订购页面样式 */
+body{
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 15px; 
+}
+.container{
+	margin-top: 215px;
+}
+.order-milk{
+	width:900px;
+	height:100%;
+	margin:0 auto;
+}
+.order-milk-image{
+	width:350px;
+	height:290px;
+	border:1px solid #ddd;
+	background-color: #fff;
+	-webkit-box-shadow:1px 2px 5px #ddd;
+	-moz-box-shadow:1px 2px 5px #ddd;
+	box-shadow:1px 2px 5px #ddd; 
+}
+.order-milk-image img{
+	width:350px;
+	height:290px;
+	border:0px;
+}
+.order-detail{
+	width:540px;
+	height: 290px;
+	border:1px solid #ddd;
+	float:right;
+	margin-top: -292px;
+	background-color: #fff;
+	-webkit-box-shadow:1px 2px 5px #ddd;
+	-moz-box-shadow:1px 2px 5px #ddd;
+	box-shadow:1px 2px 5px #ddd; 
+}
+.order-detail h1{
+	font-family: "汉仪丫丫";
+	font-size: 25px;
+	color: #2DD700;
+	margin-left: 20px;
+}
+.milk-detail ul{
+	list-style-type: none;
+	font-size: 17px;
+}
+.milk-detail ul li{
+	line-height: 40px;
+	margin-left: -25px;
+}
+.milk-detail ul li .icon-pin{
+	margin-right: 5px;
+	margin-top: -5px;
+}
+.milk-detail ul li .detail-1{
+	font-size: 22px;
+}
+.order-form{
+	width:818px;
+	height:auto;
+	border:1px solid #ddd;
+	margin:0 auto;
+	margin-top: 10px;
+	padding: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	background-color: #fff;
+	-webkit-box-shadow:1px 2px 5px #ddd;
+	-moz-box-shadow:1px 2px 5px #ddd;
+	box-shadow:1px 2px 5px #ddd; 	
+}
+.order-title{
+	width:898px;
+	height:40px;
+	margin-left: -40px;
+	margin-top: -40px;
+	margin-bottom: 13px;
+}
+.order-title .icon-cart{
+	margin-left: 10px;
+	margin-top: 5px;
+	border:0px;
+}
+.order-title p{
+	height:50px;
+	line-height: 50px;
+	font-family: "汉仪丫丫";
+	font-size: 18px;
+	font-weight: bold;
+	color: #2DD700;
+	margin-top: -36px;
+	margin-left: 50px;
+}
+.order-box-num, .order-cup-num{
+	width:40px;
+	height:21px;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border:1px solid #ccc;
+	outline: none;
+	margin-right: 10px;
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 15px;
+}
+.order-cup-num{
+	margin-left: 5px;
+}
+.order-notice{
+	color:#aaa;
+	font-size: 15px;
+	margin-left: 20px;
+}
+.order-name, .order-tel, .order-address{
+	width:323px;
+	height:25px;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border:1px solid #ccc;
+	outline: none;
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 15px;
+}
+.order-remark{
+	width:320px;
+	height:120px;
+	margin-top: -28px;
+	margin-left: 117px;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-color: #ccc;
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 15px;
+	outline: none;
+	resize:none;
+}
+.order-list-error{
+	font-size: 15px;
+	color:red;
+	margin-left: 10px;
+}

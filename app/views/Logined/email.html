@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>联系我们</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="/public/stylesheets/contact-us.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<!-- 最顶部快捷条包括登录和注册 -->
+	<div class="header">
+		<div class="banner">
+			<a href="index.html" class="banner-title">国产汽车</a>
+			<span class="milk-theme">我们的品牌，我们的情怀</span>
+			<div class="login-regist">
+			当前登录：
+            <a href="@{Logined.email()}" class="login"> ${user.username}</a>
+            |
+            <a href="@{Logined.logout()}" class="regist">注销</a>
+		</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="contact-us-area">
+			<h1>联系我们</h1>
+
+
+			#{form @sendEmail()}
+			#{field 'fromEmail'}
+			<p>${message}</p>
+				
+				你的邮箱：<input type="text" name="${field.name}" class="contact-email"  required="required" placeholder="请正确输入你的邮箱以便我们尽快回复你"/>
+				<!--
+				<span class="contact-form-error">* 请正确输入邮箱 ..</span>
+			-->
+			#{/field}
+				<br/><br/>
+
+				#{field 'title'}
+				邮件标题：<br/>
+				<textarea class="email-content" name="${field.name}" required="required" ></textarea>
+				<!--
+				<span class="contact-form-error">* 请输入内容 ..</span>
+			-->
+				<br/>
+				#{/field}
+
+				#{field 'contentTexts'}
+				邮件内容：<br/>
+				<textarea class="email-content" name="${field.name}" required="required" placeholder="请输入要发送的内容"></textarea>
+				<!--
+				<span class="contact-form-error">* 请输入内容 ..</span>
+			-->
+				<br/>
+				#{/field}
+				<input type="submit" value="发送邮件" class="btn btn-primary" />
+			#{/form}
+		</div>
+	</div>
+	<div class="footer">
+		<p>COPYRIGHT © 2012 - 2013 DESIGNED BY HCier<p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>注册</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/public/stylesheets/register-login.css">
+	<script type="text/javascript" src="public/javascripts/jquery1.83.js"></script>
+	<script type="text/javascript" src="public/javascripts/register.js"></script>
+</head>
+
+<body>
+	<h1><a href="index.html">首页</a></h1>
+	<div id="register">
+		<!用户已经存在！>
+		<p>${message}</p>
+		#{form @saveUser()}
+			#{field 'user.username'}
+			<div class="input-control">
+				<label for="username" class="username">我的昵称</label>
+				<input id="username" class="input-box" type="text" name="${field.name}"required="required" />
+				<div class="flag"></div>
+				<div id="name-msg" class="error-msg"></div>
+			</div>
+			#{/field}
+			#{field 'user.email'}
+			<div class="input-control">
+				<label for="email" class="email">常用邮箱</label>
+				<input id="email" class="input-box" type="email" name="${field.name}" required="required" >
+				<div class="flag"></div>
+				<div id="email-msg" class="error-msg"></div>
+				<!-- <div class="registerError">${field.error}</div> -->
+			</div>
+			#{/field}
+
+			#{field 'user.password'}
+			<div class="input-control">
+				<label for="passwd" class="passwd">登录密码</label>
+				<input id="passwd" class="input-box" type="password" name="${field.name}" required="required" >
+				<div class="flag"></div>
+				<div id="passwd-msg" class="error-msg"></div>
+				<!-- <div class="registerError">${field.error}</div> -->
+			</div>	
+			#{/field}
+			<!-- #{field 'verifyPassword'} -->
+			<div class="input-control">
+				<label for="passwdconfirm" class="passwdconfirm">重复密码</label>
+				<input id="passwdconfirm" class="input-box" required="required" name="${field.name}" type="password" >
+				<div class="flag"></div>
+				<div id="confirm-msg" class="error-msg"></div>
+				<!-- <div class="registerError">${field.error}</div> -->
+			</div>
+			<!-- #{/field} -->
+			<p class="register-button">
+			<input id="registerBtn" class="signup  button" name="register" type="submit" value="注册">
+			</p>
+		#{/form}
+	</div>
+	<p class="tologin">
+		已注册？
+		<a id="tologin" href="login.html">→去登录</a>
+	</p>
+</body>
+</html>

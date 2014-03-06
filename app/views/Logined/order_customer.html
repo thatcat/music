@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>国产汽车网后台管理</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            
+	<link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="/public/stylesheets/cms-index.css" rel="stylesheet" type="text/css" />
+	<script src="/public/javascripts/jquery1.83.js" type="text/javascript"></script>
+    <script src="/public/javascripts/bootstrap-tab.js" type="text/javascript"></script>
+	<script src="/public/javascripts/order_customer.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="header">
+    <div class="banner">
+        <a href="index.html" class="banner-title">国产汽车网</a>
+			<span class="milk-theme">个人中心</span>
+		<div class="admin-login">
+			当前登录：
+            <a href="#" style="cursor:default;" class="login"> ${user.username}</a>
+            | 
+            积分：${user.integration}
+            |
+            <a href="@{Logined.logout()}" class="regist">注销</a>
+		</div>
+    </div>
+	</div>
+	<div class="container">
+
+		<div class="nav-bar">
+			<ul class="cms-lists nav-tabs">
+				<li id="xgl" class="actived">
+					<!-- 酸奶订单管理 -->
+					<a id="xg" href="#change_password">修改密码</a>
+				</li>
+				<li id="sql">
+					<!-- 酸奶留言管理 -->
+					<a id="sq" href="#ower_verify">申请车主认证</a>
+				</li>
+			</ul>
+		</div>
+
+<!---------------------------------------------------修改密码开始------------------------------------------------------>
+		<div class="tab-pane active" id="change_password">
+		
+				#{form @changePassword()}
+							#{field 'newPassword'}
+							<p>
+							${flash.success}
+							</p>
+							<p>						
+								<label for="passwd" class="passwd">新&nbsp;&nbsp;密&nbsp;&nbsp;码</label>
+								<input id="passwd"  type="password" name="${field.name}" required="required" ><br />
+								<span class="error">${field.error}</span>
+							</p>	
+							#{/field}
+							#{field 'verifyNewPassword'}
+							<p>
+								<label for="passwdconfirm" class="passwdconfirm">重复密码</label>
+								<input id="passwdconfirm"  required="required" name="${field.name}" type="password" ><br />
+								<span class="error">${field.error}</span>
+							</p>
+							#{/field}
+							<p class="register-button">
+							<input class="signup  button" name="register" type="submit" value="确定">
+							</p>
+				#{/form}
+				
+		</div>
+<!---------------------------------------------------修改密码结束------------------------------------------------------->
+	
+<!---------------------------------------------------车主申请开始------------------------------------------------------>
+<div id="uploadPhoto">
+	<p>
+						上一次认证是否通过： #{if user.isCarOwner}通过， 认证内容:${user.authType}#{/if} #{else}不通过 #{/else} 
+	</p>
+	#{form @uploadPhoto(), enctype:'multipart/form-data'}
+	<p>
+		${flash.success}
+	</p>
+    <div class="input-control">
+		<label for="photo">上传购车证明照片</label>
+		<input type="file" id="photo" name="photo" />
+    </div>
+    <div class="input-control">
+		<label for="idcard">上传身份证明照片</label>
+		<input type="file" id="idcard" name="idcard" />
+    </div>
+    <div class="input-control">
+		<input type="submit" value="确定" />
+    </div>
+	#{/}
+	
+</div>
+<!---------------------------------------------------车主申请结束------------------------------------------------------->
+
+</div>
+</body>
+</html>

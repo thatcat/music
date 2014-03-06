@@ -1,0 +1,19 @@
+# Users
+
+models.User(admin1):
+    username:   admin
+    password:   admin
+    email:      scauMilk@163.com
+    isAdmin:    true
+
+models.User(admin2):
+    username:   music
+    password:   music
+    email:      scauMilk@163.com
+    isAdmin:    true
+
+
+
+
+
+

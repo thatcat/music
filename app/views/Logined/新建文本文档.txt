@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/XHTML1/DTD/XHTML1-Transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>留言区</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="/public/stylesheets/opa-icons.css"  rel="stylesheet" type="text/css" /> 
+	<link href="/public/stylesheets/words-board.css" rel="stylesheet" type="text/css" />	
+	<script type="text/javascript" src="/public/javascripts/jquery1.83.js"></script>
+	<script type="text/javascript" src="/public/javascripts/page-bar.js"></script>
+	<script type="text/javascript" src="/public/javascripts/words-board.js"></script>
+	<script type="text/javascript" src="/public/javascripts/words-count.js"></script>
+</head>
+<body>
+	
+	<!-- 客户留言区 -->
+	<div class="words-board">
+		<div class="words-title">
+			<h1>留言区</h1>
+			<p id="total-num">当前总留言 ${postList.size()} 条</p>
+		</div>
+		#{form @savePostForCMS()} 
+			<div class="make-words">
+			#{field 'post.content'}
+				<div class="words-area">
+					<!-- 注意这里的 textarea 中间的空格会算进字数统计中 -->
+					<textarea name="${field.name}" onKeyDown="maxWords2(this.form)" onKeyUp="maxWords2(this.form)" onblur="if(this.value==''){ this.value='来，说说你对酸奶的寄语 ..'; }" onfocus="if(this.value=='来，说说你对酸奶的寄语 ..'){ this.value=''; }">来，说说你对酸奶的寄语 ..</textarea>
+				</div>
+			#{/field}
+				<div class="count-submit-bar">
+					<input type="text" name="maxNum2" value="190" readonly="readonly" class="words-count">
+					<input name="register" type="submit" value="发表">
+				<!--	<button onclick="#" class="btn btn-primary words-submit">发表</button>			-->
+				</div>
+			</div>
+		#{/form}
+		<!-- 下面一行是分页条的实现，注意不要修改它的 id -->
+      <div id="p1"></div>
+<ul id="list">
+#{list items:postList,as:'postlist'}
+                              
+		
+		           
+		             	<!-- 每个 li 是 1 页留言，包括 10 条留言（即 10 个 div）-->
+		             	<li>
+                      <div class="words-list" id="words-list">
+		             		<!-- 下面是一条留言的 div 开始 -->
+			                <div class="a-list"> 
+														<div class="list-details">
+															<i class="icon32 icon-color icon-bullet-off"></i>
+																	<span class="name">${postlist.author}</span>
+																	<span class="time">${postlist.postedAt}</span>
+																	<span class="floor">${postlist.id}</span>
+																			<span class="comment">
+																			<i class="icon icon-color icon-messages" title="回复数目"></i>${postlist.comments.size()}
+																			</span>						
+														 </div>
+					         	<p class="list-content">${postlist.content}</p>
+								<a href="@{deletePost(postlist.id)}"  value="删除留言">删除留言<a/>
+							 </div>
+						       #{list items:postlist.comments,as:'commentlist'}
+						
+														 <div class="list-back">
+															<div>
+																<i class="icon icon-color icon-messages"></i>
+																<span class="back-name">${commentlist.author}</span>
+																<span class="back-time">${commentlist.postedAt}</span>
+																<p>${commentlist.content}  
+																<a href="@{deleteComment(commentlist.id)}"  value="删除留言">删除评论<a/>								  
+				                                                															
+															</div>
+															 
+														 </div>
+														
+                               #{/list}
+					  
+                #{form @postCommentForCMS(postlist.id, content)}
+				  #{field 'content'}
+				   <p>
+					
+					<input type="textarea" cols=800 rows=10 name="${field.name}" id="loginusername" }" required="required" placeholder="我来说一句" >	
+					<input type="submit" name="submit" value="评论">
+         		  </p>
+				  #{/field}
+				
+				#{/form}
+	
+				 </div>
+
+</li>
+
+	<!-- container -->
+
+
+
+
+
+
+           
+#{/list}
+	</ul>				
+	
+	<!-- 页脚 -->
+	<div class="footer">
+		<p>COPYRIGHT ? 2012 - 2013 DESIGNED BY HCier<p>
+	</div>
+</body>
+</html>

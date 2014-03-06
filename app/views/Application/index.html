@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- <html xmlns="http://www.w3.org/1999/xhtml"> -->
+<html xmlns="http://www.w3.org/1999/xhtml" manifest="public/car.manifest">
+<head>
+	<title>国产汽车网 - 让更多人了解我们自己的民族品牌</title>
+	<meta name="keywords" content="国产汽车" />
+	<meta name="discription" content="国产汽车，为的是一份情怀" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<link href="public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="public/stylesheets/opa-icons.css"  rel="stylesheet" type="text/css" />
+	<link href="public/stylesheets/index.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="public/images/favicon.ico" />
+	<script src="public/javascripts/jquery1.83.js" type="text/javascript"></script>
+	<script src="public/javascripts/words-count.js" type="text/javascript"></script>
+	<script src="public/javascripts/scroll-top-control.js" type="text/javascript"></script>
+    <script src="public/javascripts/picture-show.js" type="text/javascript"></script>       
+	<script src="public/javascripts/car-show.js" type="text/javascript"></script>      
+</head>
+<body>
+	<!-- 最顶部快捷条包括登录和注册 -->
+	<div class="header">
+		<div class="banner">
+			<a href="index.html" class="banner-title">国产汽车</a>
+			<span class="milk-theme">我们的品牌，我们的情怀</span>
+			<div class="login-regist">
+				<a href="login.html" id="login" class="login">登录</a>
+				|
+				<a href="register.html" class="regist">注册</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+	<!-- 右边固定在屏幕边上的联系方式 --> 
+	<div class="contact-us">
+		<div class="contact-area">
+			<a href="email.html">联系我们</a>
+		</div>
+	</div>
+	
+	<!----------------------------------------------------------------------------- 搜索框开始 --------------------------------------------------> 
+	<div id="carSearch">
+		#{form @search(), id:'formSearch', class:'form-inline'}
+				#{field 'carType'}				
+					<label id="selectLabel" for="selectInput">选择车型</label>
+                    <span id="down">▼</span>
+                    <ul id="selectCar">
+                        <li id="carList1" class="carList">微型车</li>
+                        <li id="carList2" class="carList">小型车</li>
+                        <li id="carList3" class="carList">紧凑型车</li>
+                        <li id="carList4" class="carList">中型车</li>
+                        <li id="carList5" class="carList">中大型车</li>
+                        <li id="carList6" class="carList">豪华型车</li>
+                        <li id="carList7" class="carList">SUV</li>
+                        <li id="carList8" class="carList">MPV</li>
+                        <li id="carList9" class="carList">跑车</li>
+                        <li id="carList10" class="carList">商用车</li>
+                    </ul>
+					<input type="hidden" class="input-box" name="carType" id="selectInput" value="微型车">	
+					<span class="error">${field.error}</span>				
+				#{/field}
+				&nbsp;&nbsp;
+				
+				#{field 'lowPrice'}			
+					<label id="priceLabel" for="lowPrice">选择价格区间</label>
+					<input type="text" id="lowPrice" class="input-box" name="lowPrice"  placeholder="例如：50000">
+					<span class="error">${field.error}</span>				
+				#{/field}
+				-
+				#{field 'highPrice'}			
+					<label for="highPrice"></label>
+					<input type="text" id="highPrice" class="input-box" name="highPrice"  placeholder="例如：100000">
+					<span class="error">${field.error}</span>		
+				#{/field}
+					<input class="btn btn-info" type="submit" value="搜索">		
+			#{/form}
+
+	</div>
+	<!----------------------------------------------------------------------------- 搜索框结束 ------------------------------------------------->
+
+	<div class="ad-news" id="ad-news">
+		<!-- 汽车轮番图或者视频 -->
+		<div class="ad">
+			<div class="picture-show-box">
+				<div class="picture-show">
+					<ul>
+						<li><img src="public/images/kind1.jpg" width="400" height="260" /></li>
+						<li><img src="public/images/kind2.jpg" width="400" height="260" /></li>
+						<li><img src="public/images/kind3.jpg" width="400" height="260" /></li>
+						<li><img src="public/images/kind4.jpg" width="400" height="260" /></li>
+						<li><img src="public/images/kind5.jpg" width="400" height="260" /></li>
+					</ul>
+				</div>
+				<div class="index">
+					<span class="current">1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>5</span>
+				</div>
+			</div>
+		</div>
+		<!-- 行业动态 -->
+		<div class="news">
+			<div class="news-title">
+				<h1>小道消息</h1>
+			</div>
+			<a href="showAllNews.html" class="more">more</a>
+			<div class="news-top">
+				<p>
+					<img src="public/images/hot.gif" alt="热点新闻" title="热点新闻" class="hot-logo"/>
+					<a href="carNews?id=1">头条：国产汽车网www.guochanqichewang.cn上线啦
+					</a>
+				</p>
+			</div>
+			<div class="news-lists">
+				<ul id="newsScroll">
+				            <li>
+				            		<i class="icon icon-color icon-tag"></i>
+				            		<a href="carNews?id=2">自主品牌主流车企完成战略调整开始发力</a>
+				            </li>				
+				            <li>
+				            		<i class="icon icon-color icon-tag"></i>
+				            		<a href="###">汽车媒体面临困境，将出现分化、重组和调整</a>
+				            </li>
+				            <li>
+				            		<i class="icon icon-color icon-tag"></i>
+				            		<a href="###">军队公务车只能选用国产</a>
+				            </li>
+				            <li>
+				            		<i class="icon icon-color icon-tag"></i>
+				            		<a href="###">国产品牌汽车 碰撞评测获第一</a>
+				            </li>
+				</ul>
+			</div>
+			<!-- 下面是新闻滚动的脚本，不要移开 -->
+			<script src="public/javascripts/news-lists-scroll.js" type="text/javascript">
+			</script>
+		</div>
+	</div>
+
+	<!----------------------------------------------------------汽车图标区开始-------------------------------------->
+	<div id="content-box"></div>
+        
+	
+	<!----------------------------------------------------------汽车图标区结束-------------------------------------->
+
+	<!-- 客户留言区 -->
+	<div class="words-board" id="words-board">
+		<div class="words-title">
+			<h1>留言区</h1>
+		</div>
+		<a href="words_board.html" class="more">more</a>
+		#{form @Logined.savePost2() }
+			<div class="make-words">
+			#{field 'post.content'}
+				<div class="words-area">
+					<!-- 注意这里的 textarea 中间的空格会算进字数统计中 -->
+					<textarea id="words" name="${field.name}" onKeyDown="maxWords(this.form)" onKeyUp="maxWords(this.form)" onblur="if(this.value==''){ this.value='来，说说你对国产汽车的寄语 ..'; }" onfocus="if(this.value=='来，说说你对国产汽车的寄语 ..'){ this.value=''; }">来，说说你对国产汽车的寄语 ..</textarea>
+				</div>
+		    #{/field }
+				<div class="count-submit-bar">
+					<input type="text" name="maxNum" value="190" readonly="readonly" class="words-count" id="words-count">
+					<button onclick="#" class="btn btn-info words-submit" type="submit">发表</button>			
+				</div>
+			</div>
+		#{/form}
+		<div class="words-list">
+	<ul id="list">
+#{list items:postList,as:'postlist'}
+       		             	<!-- 每个 li 是 1 页留言，包括 10 条留言（即 10 个 div）-->
+		             	<li>
+                      <div class="words-list" id="words-list">
+		             		<!-- 下面是一条留言的 div 开始 -->
+			                <div class="a-list"> 
+														<div class="list-details">
+															<i class="icon32 icon-color icon-bullet-off"></i>
+																	<span class="name">${postlist.author}</span>
+																	<input type="hidden" class="isAdmin" value="${postlist.author.isCarOwner}" />
+																	<input type="hidden" class="authType" value="${postlist.author.authType}" />
+																	<span class="time">${postlist.postedAt}</span>
+																	<span class="floor">${postlist.id}</span>
+																			<span class="comment">
+																			<i class="icon icon-color icon-messages" title="回复数目"></i>${postlist.comments.size()}
+																			</span>						
+														 </div>
+					         	<p class="list-content">${postlist.content}</p>
+							 </div>
+						#{list items:postlist.comments,as:'commentlist'}
+						
+														 <div class="list-back">
+															<div>
+																<i class="icon icon-color icon-messages"></i>
+																<span class="name back-name">${commentlist.author}</span>
+																<input type="hidden" class="authType" value="${commentlist.author.authType}" />
+																<input type="hidden" class="isAdmin" value="${commentlist.author.isCarOwner}" />
+																<span class="back-time">${commentlist.postedAt}</span>
+																<p class="back-text">${commentlist.content}</p>
+																
+															</div>
+															 
+														 </div>
+														
+                      #{/list}
+					    #{form @Logined.postComment(postlist.id, content)}
+				  #{field 'content'}
+				   <p>
+					
+					<input class="input-box" type="textarea" name="${field.name}" id="loginusername" }" required="required" placeholder="我来说一句" >	
+					<input class="btn btn-info" type="submit" name="submit" value="评论">
+
+				  </p>
+				  #{/field}
+				#{/form}
+					 </div>
+
+</li>
+
+	<!-- container -->
+       
+#{/list}
+	</ul>	
+	<!-- 页脚 -->
+	<div class="footer">
+		<p>COPYRIGHT © 2013 <p>
+	</div>
+	<!-- 右下角回顶部固定按钮 -->
+	<div id="topcontrol" class="scrollTop" title="回顶部看看">
+		<img src="/public/images/scrollTop.gif"/>
+	</div>
+
+    
+        #{list items:carBrandList,as:'carbrandlist'}
+        <input class="brandParise" type="hidden" value=${carbrandlist.parise} /> 
+        #{/list}
+    
+</body>
+</html>

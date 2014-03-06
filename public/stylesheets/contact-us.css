@@ -1,0 +1,62 @@
+/* 联系我们页面的样式 */
+@import url(index.css);
+.container{
+	margin-top: 215px;
+}
+.contact-us-area{
+	width:900px;
+	height:auto;
+	border:1px solid #ddd;
+	margin:0px auto;
+	background-color: #fff;
+}
+.contact-us-area h1{
+	height: 35px;
+	line-height: 35px;
+	font-family: "汉仪丫丫";
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 5px;
+	color: #2DD700;
+}
+.contact-us-area form{
+	padding-left: 20px;
+}
+.contact-email{
+	width:350px;
+	height:25px;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border:1px solid #ccc;
+	outline: none;
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 15px;
+	margin-left: 4px;
+	text-indent: 10px;
+}
+.email-content{
+	width:500px;
+	height:150px;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-color: #ccc;
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 15px;
+	outline: none;
+	resize:none;
+	margin-left: 79px;
+	margin-top: -18px;
+	text-indent: 10px;
+}
+.contact-us-area .btn-primary{
+	margin-left: 79px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.contact-form-error{
+	font-size: 15px;
+	color:red;
+	margin-left: 10px;
+}

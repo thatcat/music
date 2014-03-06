@@ -1,0 +1,157 @@
+﻿/* 登录和注册的样式 */
+body{
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 15px; 
+	color:#000;
+	background-color: rgb(240,240,241);
+}
+@font-face {
+ 	font-family: "汉仪丫丫";
+ 	src: url('public/images/font/汉仪丫丫.eot') format('eot');
+  	src: local('汉仪丫丫'),
+  	url('public/images/font/汉仪丫丫.woff') format('woff'), 
+  	url('public/images/font/汉仪丫丫.ttf') format('truetype'),
+ 	url('public/images/font/汉仪丫丫.svg') format('svg');
+} 
+h1 {
+	width: 304px;
+	margin: 30px auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
+h1 a {
+	background: url('../images/car.png') no-repeat center;
+	text-indent: -2000px;
+	text-decoration: none;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+#register h1, #login h1{
+	font-family:"汉仪丫丫"; 
+	font-size:35px; 
+	font-weight: bold;
+	color:#fff;
+}
+#register , #login{
+    padding: 0 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;  
+    letter-spacing: 1px;
+    -webkit-box-shadow:1px 2px 5px #ddd;
+    -moz-box-shadow:1px 2px 5px #ddd;
+    box-shadow:1px 2px 5px #ddd;
+    border-radius: 3px;
+}
+#login{
+	width: 234px;
+	height: 270px;
+	z-index: -1;
+	margin: 0 auto;
+}
+#register{
+    width: 330px;
+    height: 336px;
+    z-index: -1;
+    margin: 0 auto;
+}
+.input-control{
+    position: relative;
+    margin-top: 20px;
+}
+.input-control .error-msg{
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    margin-left: 50px;
+    width: 100%;
+    color: #f00;
+}
+.flag {
+    display: inline-block;
+    
+}
+.flag img{
+    width: 20px;
+    height: 30px;
+    vertical-align: middle;
+}
+label {
+    vertical-align: middle;
+}
+input:not([type="checkbox"]){
+	width: 220px;
+	height: 30px;
+	margin-top: 5px;
+	outline: none;
+	text-indent: 10px;
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 15px; 
+	color:rgb(64, 92, 96);
+}
+input[type="submit"]
+{
+	width: 70px;
+	height: 30px;
+	text-indent: 0;
+	background: rgb(74, 179, 198);
+	cursor: pointer;
+	border-radius: 5px;
+	color: white;
+	border: 0;
+	border-radius: 3px;
+	letter-spacing: 3px;
+	margin-left: 84px;
+}
+.register-button{
+    /*margin-top: -30px;*/
+}
+.signup.button{
+    margin-left: 126px;
+}
+/*a{
+	background: white;
+	text-decoration: none;
+	color:  rgb(74, 179, 198);
+	padding: 10px;
+	border-radius: 5px;
+	border:1px solid #bbb;
+}*/
+
+#toregister,#tologin{
+	margin-left: 46px;
+	color: #000;
+}
+.toregister, .tologin{
+    color: #999;
+    text-align: center;
+}
+.registerError{
+    color: #f00;
+    text-align: center;
+}
+.loginError{
+    margin-left: 22px;
+    color: #f00;
+}
+.input-box {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}

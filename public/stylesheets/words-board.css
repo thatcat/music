@@ -1,0 +1,86 @@
+ @import url('index.css');
+ /* Css for words-board */
+ .container{
+ 	margin-top: 215px;
+ }
+.words-board{
+ 	height:auto;
+}
+.list-details{
+ 	margin-top: 5px;
+ }
+.back{
+	float:right;
+	margin-right: 250px;
+	margin-top: 16px;
+}
+.back a{
+	color:#000;
+	text-decoration: none;
+	font-weight: bold;
+}
+/* 留言总数 */
+#total-num{
+	margin-left: 110px;
+	margin-top: -39px;
+}
+#boardForm {
+	overflow: hidden;
+}
+/* 留言框修正 */
+#boardForm, .make-words{
+	height:auto;
+	/*float: left;*/
+	padding: 0 20px;
+	margin: 10px auto;
+	/*margin-bottom: 25px;*/
+	/*margin-top: 10px;*/
+}
+.count-submit-bar .btn {
+	float: right;
+}
+.list-back{
+	width:808px;
+	margin-bottom: 10px;
+	margin-left: 43px;
+}
+.list-back .icon-messages{
+ 	margin-left: -20px;
+}
+.list-back .back-name{
+	margin-left: 0px;
+}
+.list-back p{
+	width:808px;	
+	margin-left: 3px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/* 分页条样式 */
+#p1 {
+	width: 870px;
+	height: 40px;
+	line-height: 25px;
+	margin: 10px auto;
+	margin-bottom:40px;
+	border-bottom: 1px dashed #ddd;
+}
+#p1 a {
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 14px;
+	margin:6px;
+	padding:2px 7px 2px 7px; 
+	text-decoration:none;
+	color:#000;
+	border:1px solid #ccc;
+}
+.current {
+	font-family: "微软雅黑", "宋体", "黑体", Arial, Sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin:6px;
+	padding:4px 7px 2px 7px; 
+	text-decoration:none;
+	background-color:#5FEB3B;
+	color:#fff;
+}
