@@ -17,8 +17,8 @@ public class Application extends Controller {
         		Logined.order_cms();
         }
 		List<Post> postList = Post.find("order by id desc").from(0).fetch(3);	  	
-		List<CarBrand> carBrandList = CarBrand.findAll();
-       render(postList,carBrandList);
+		
+       render(postList);
     }
 
     public static void register(String message) {
@@ -68,39 +68,17 @@ public class Application extends Controller {
         login();
     }
 
-	public static void search(String carType,String lowPrice,String highPrice) {
-		User user = Logined.connected();
-		float tempLowPrice=0;
-		float tempHighPrice=100000000;
-		if( lowPrice.equals("") || lowPrice == "" )
-			tempLowPrice=0;
-		else
-			tempLowPrice=Float.parseFloat(lowPrice)/10000;
-		if( highPrice.equals("")||highPrice == "" )
-			tempHighPrice=10000000;
-		else
-			tempHighPrice=Float.parseFloat(highPrice)/10000;
-		System.out.println("-----------------------tempHighPrice="+tempHighPrice);
-		List<CarSeries> carSeriesList = CarSeries.find("Select c from CarSeries c where carType=? and bottomPrice > ? and bottomPrice <?",carType,tempLowPrice,tempHighPrice).fetch();	
-		render("Application/showSeries.html",carSeriesList,user);
-	}
 
-	/**点赞*/
+	/**点赞
 	public static void addPraise(Long id,int num) {
 		CarBrand carBrand = CarBrand.findById(id);
 		carBrand.parise=num;
 		carBrand.save();
 	}
-
-	public static void showSeries(Long id ) {
-		User user = Logined.connected();
-		CarBrand carBrand = CarBrand.find("byId",id).first();
-		List<CarSeries> carSeriesList = CarSeries.find("byBrandName",carBrand).fetch();
-		render(carSeriesList,user);
-	}
+	*/
 
 	/**添加汽车系列点评
-	 */
+	
 	public static void addCarComment(Long id, String carCommentType ) {
 		if(Logined.connected()==null)
 		{
@@ -127,33 +105,6 @@ public class Application extends Controller {
 		carComment.save();
 		showSeries(id);
 	}
-
-	public static void showModels(Long seriesId) {
-		User user = Logined.connected();
-		CarSeries carSeries = CarSeries.find("byId",seriesId).first();
-		CarModel carModel = CarModel.find("bySeriesName",carSeries).first();
-		String str;
-		if(carModel == null)
-			str = "<div align=\"center\"><h2>亲，还没有该系列型号的数据哦..可以先看一下其他系列</h2></div>";
-		else {
-		 str = carModel.allModelDataString;
-		}
-		render(str,user);
-	}
-
-	public static void notFound() {
-		render();
-	}
-
-	public static void carNews(Long id) {
-		User user = Logined.connected();
-		render("Application/carNews"+id+".html",user);
-	}
-
-	public static void showAllNews() {
-		User user = Logined.connected();
-		render(user);
-	}
-	
+ */
 
 }

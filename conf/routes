@@ -12,31 +12,6 @@ GET     /logined.html                           Logined.logined
 GET     /Logined                                Logined.logined
 GET	/words_board.html						Logined.words_board	
 GET	/email.html								Logined.email	
-#GET 	/order.html								Logined.orders
-GET		/order_cms.html							Logined.order_cms
-GET		/order_customer.html							Logined.order_customer
-GET		/showBorad.html							Logined.showBorad
-GET		/test.html						Logined.test
-GET		/contact_us.html					Logined.contact_us
-GET     /post_cms.html                      Logined.post_cms
-POST	/addPraise.html						Application.addPraise
-GET		/showSeries					Application.showSeries
-GET         /search						Application.search
-GET		/application/addcarcomment	Application.addCarComment
-
-GET			/addSeriesData.html			Logined.addSeries
-POST		/addSeriesData.html			Logined.addCarSeries
-GET			/addModel.html			Logined.addModel
-POST		/addModel.html			Logined.addCarModel
-
-GET			/showModels.html		Application.showModels
-GET			/carNews.html			Logined.carNews
-
-GET			/carNews				Application.carNews
-GET			/showAllNews.html			Application.showAllNews
-
-GET			/*						Application.notFound	
-POST		/*						Application.notFound
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

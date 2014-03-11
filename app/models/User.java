@@ -46,7 +46,7 @@ public class User extends Model {
 	public Date applyDate; //申请认证日期
 
 	@OneToMany(mappedBy="user", cascade=CascadeType.ALL)
-    public List<CarComment> carComments;
+    public List<MusicComment> musicComments;
    
     public User(String email, String password, String username) {
         this.email = email;
