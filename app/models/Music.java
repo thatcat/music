@@ -18,7 +18,7 @@ public class Music extends Model {
     public String player="未知歌手";
     
     @MaxSize(8)
-    public String type="未知专辑";//所属类别：粤语歌、国语歌、英文歌、韩语歌..要包含一个“歌”字
+    public String type="中文歌";//所属类别：粤语歌、国语歌、英文歌、韩语歌..要包含一个“歌”字
 
 	@MaxSize(15)
 	public String albums="未知专辑";//所属专辑
