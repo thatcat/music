@@ -9,11 +9,8 @@ public class Application extends Controller {
 
     public static void index() {
     	User user = Logined.connected();
-        if(user != null) {
-            //跳转到登录画面
-        	if(user.isAdmin == false)
-        		Logined.logined();
-        	else
+        if(user != null && user.isAdmin == true) {
+            //转跳到管理员页面
         		Logined.music_cms();
         }
 		List<Post> postList = Post.find("order by id desc").from(0).fetch(3);
@@ -40,6 +37,7 @@ public class Application extends Controller {
                 String message = "用户已经存在！";
                 register(message);
             }
+
         }
         validation.required(verifyPassword);
         validation.equals(verifyPassword, user.password).message("密码不一致");

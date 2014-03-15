@@ -7,11 +7,12 @@ GET     /                                       Application.index
 GET     /index.html                             Application.index
 GET     /register.html                          Application.register
 POST    /register.html                          Application.saveUser
-GET     /login.html                             Application.login
-GET     /logined.html                           Logined.logined
-GET     /Logined                                Logined.logined
-GET	/words_board.html						Logined.words_board	
-GET	/email.html								Logined.email	
+
+GET       /login.html                             Application.login
+#GET     /logined.html                           Logined.logined
+#GET     /Logined                                Logined.logined
+GET		 /words_board.html						Logined.words_board	
+GET		/email.html								Logined.email	
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

@@ -30,27 +30,20 @@ public class Logined extends Controller {
         } 
         return null;
     }
-
-	@Before
-	static void checkLogined() { 
-		    if(connected() == null) {
-            //跳转到登录画面
-            Application.login();
-        }
-	}
 	
 	/**添加管理员权限拦截，不是管理员，不能执行以下字符串数组内的方法*/
 	@Before(only={"order_cms","post_cms","deletePost","deleteComment","deal_refresh","auth_delete","addSeries","saveCarSeries"}) 
 	static void checkAdmin() { 
 		User user = connected();
+		if(user == null)
+			Application.login();
 		if(user.isAdmin != true) {
 			notFound();
         }
 	}
 
     public static void logined() {
-		List<Post> postList = Post.find("order by id desc").from(0).fetch(3);	
-       render(postList);
+		Application.index();
     }
     
     public static void logout() {
