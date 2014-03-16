@@ -45,8 +45,31 @@
 	<!----------------------------------------------------------------------------- 搜索框结束 ------------------------------------------------->
 
 	<!---------------------------------------------------------排行榜开始-------------------------------------->
-
-        
+       	<div class="words-title" align="center">
+			<h1>国语歌</h1>
+		</div>
+		#{list items:guoYuList,as:'guoyulist'}
+						
+														 <div class="list-back">
+															<div>
+																<i class="icon icon-color icon-messages"></i>
+																
+																<object type="application/x-shockwave-flash"
+																	data="player/audioplayer.swf" width="290" height="24"
+																	id="audioplayer${guoyulist.id}">
+																	<param name="movie" value="player/audioplayer.swf" />
+																	<param name="FlashVars"
+																		value="playerID=${guoyulist.player}&soundFile=${guoyulist.path}" />
+																	<param name="quality" value="high" />
+																	<param name="menu" value="false" />
+																	<param name="wmode" value="transparent" />
+																</object>
+																
+															</div>
+															 
+														 </div>
+													
+          #{/list}
 	
 	<!----------------------------------------------------------排行榜结束-------------------------------------->
 
