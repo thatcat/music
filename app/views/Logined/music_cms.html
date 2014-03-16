@@ -78,7 +78,22 @@
 			</ul>
 		</div>
 	</div>
-           
+	<!-----------------------上传音乐开始--------------------->
+	<div align="left">
+		<form action="@@{Logined.uploadMusic()}" method="post" enctype="multipart/form-data">
+
+			音乐名称：<input type="text" name="musicName"/></br>		
+			歌    手：<input type="text" name="player"/></br>
+			类    型：<input type="text" name="type"/>所属类别：粤语歌、国语歌、英文歌、韩语歌,要包含一个“歌”字或填其他</br>
+			专辑：<input type="text" name="albums"/></br>	
+			发行日期：<input type="text" name="publicDate"/></br>
+			上传文件<input type="file" name="musicFile"/></br>
+			<input type="submit" value="上传"/>
+
+		</form>											
+	</div>
+    <!-----------------------上传音乐结束--------------------->
+	
   <div class="footer">
     <p>COPYRIGHT © 2012 - 2013 DESIGNED BY HCier<p>
   </div>

@@ -27,31 +27,15 @@ public class User extends Model {
     
     public boolean isAdmin;
 
-	public boolean isCarOwner;//是否为车主
-
-	public String authType;
-
-	public String authPictiurePath;//认证的图片路径
-
-	public String idcardPictiurePath;//认证的图片路径
-
-	public boolean isDeal;//是否已经被处理了认证
-
 	public int integration; //积分
 
 	@As("yyyy-MM-dd HH:mm:ss")
-	public Date authDate; //认证日期
-
-	@As("yyyy-MM-dd HH:mm:ss")
-	public Date applyDate; //申请认证日期
+	public Date registerDate; //认证日期
 
 	@OneToMany(mappedBy="user", cascade=CascadeType.ALL)
     public List<MusicComment> musicComments;
    
-    public User(String email, String password, String username) {
-        this.email = email;
-        this.password = password;
-        this.username = username;
+    public User() {
         this.isAdmin = false;
     }
 

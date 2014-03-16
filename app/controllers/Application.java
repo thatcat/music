@@ -18,7 +18,7 @@ public class Application extends Controller {
 		List<Music> guoYuList=Music.find("byTypeOrderByPlayCount","粤语歌").from(0).fetch(15);
 		List<Music> yingWenList=Music.find("byTypeOrderByPlayCount","英文歌").from(0).fetch(15);
 		List<Music> hanWenList=Music.find("byTypeOrderByPlayCount","韩语歌").from(0).fetch(15);
-		
+		System.out.println("------------------------yueYuList.size()="+yueYuList.size());
        render(postList);
     }
 
@@ -45,7 +45,7 @@ public class Application extends Controller {
             render("@register", user, verifyPassword);
          }
         user.isAdmin = false;
-		user.isCarOwner=false;
+		user.registerDate = new Date();
         user.create();
         session.put("user", user.username);
         flash.success("Welcome, " + user.username);

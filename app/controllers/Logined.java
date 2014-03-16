@@ -70,11 +70,7 @@ public class Logined extends Controller {
     }
     
     public static void music_cms(){
-		 //还没有处理的车主认证
-    	List<User> userUndealList = User.find("byIsDealAndAuthPictiurePathIsNotNull",false).fetch();
-    	//已经处理的车主认证
-    	List<User> userDealedList = User.find("byIsDealAndAuthPictiurePathIsNotNull",true).fetch();
-       render(userUndealList,userDealedList);
+       render();
     }
 
 	public static void savePostOrigin(Post post) {
@@ -230,19 +226,15 @@ public class Logined extends Controller {
 		 music_customer();
 		}
 
-		/**上传图片,photo为车辆证明材料照片文件，idcard为身份证照片文件
-	
-		 public static void uploadPhoto( File photo, File idcard) {
-			String outputPah = Play.applicationPath.toString()+"\\public\\attachment\\";
+		/**上传音乐,music为上传的音乐
+		*/
+		 public static void uploadMusic( File musicFile,String musicName,String player, String albums,String type,String publicDate) {
+			String outputPath = Play.applicationPath.toString()+"\\public\\music\\";
 			try
 			{		
-			File outputFile = new File(outputPah+photo.getName());
+			File outputFile = new File(outputPath+musicFile.getName());
 			FileOutputStream fos = new FileOutputStream(outputFile);
-			FileInputStream fis = new FileInputStream(photo);
-
-			File outputIdCard = new File(outputPah+idcard.getName());
-			FileOutputStream fos2 = new FileOutputStream(outputIdCard);
-			FileInputStream fis2 = new FileInputStream(idcard);
+			FileInputStream fis = new FileInputStream(musicFile);
 
 			byte[] buffer = new byte[10240];
 			int len = 0;
@@ -251,15 +243,7 @@ public class Logined extends Controller {
 			}
 			fos.close();
 			fis.close();
-
-			len=0;
-			while((len=fis2.read(buffer))>0) {
-				fos2.write(buffer,0,len);
-			}
-			fis2.close();
-			fos2.close();
-
-			 flash.success("上传成功" );
+			flash.success("上传成功" );
 			}
 			catch (FileNotFoundException  e )
 			{
@@ -273,19 +257,52 @@ public class Logined extends Controller {
 			 {
 				e.printStackTrace(); 
 			 }
-
-			User user = connected();
-			if(photo!=null)
-				user.authPictiurePath="public\\attachment\\"+photo.getName();
-			if(idcard!=null)
-				user.idcardPictiurePath="public\\attachment\\"+idcard.getName();
-			user.isDeal=false;
-			user.applyDate=new Date();
-			user.save();	
+			 
+			 Music music = new Music();
+			 music.musicName = musicName;
+			 music.player = player;
+			 music.albums = albums;
+			 music.type = type;
+			 //music.publicDate = 
+			 music.uploadDate = new Date ();
+			 music.path = "public\\music\\"+musicFile.getName();
+			 music.save();
+			 System.out.println("----------------------------music.id="+music.id);
+			 System.out.println("----------------------------music.path="+music.path);
+			 System.out.println("----------------------------music.playCount="+music.playCount);
+			music_cms();
+	 }
+	 
+	 
+	/**上传音乐,music为上传的音乐
+	
+	public static void uploadMusic( File music) {
+			String outputPath = Play.applicationPath.toString()+"\\public\\attachment\\";
+			try
+			{		
+			File storeFile=new File(outputPath+music.getName());
+			flash.success("上传成功" );
+			
+			File.copy(music, storeFile);
+			
+			}
+			catch (FileNotFoundException  e )
+			{
+				e.printStackTrace(); 
+			}
+			catch (IOException  e )
+			{
+				e.printStackTrace(); 
+			}
+			catch(NullPointerException e)
+			 {
+				e.printStackTrace(); 
+			 }
 			music_customer();
 	 }
+	 */
 
-	 	  */
+	 	 
 
 	public static void search() {
 		
