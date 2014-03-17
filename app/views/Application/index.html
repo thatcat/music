@@ -13,8 +13,7 @@
 	<script src="public/javascripts/jquery1.83.js" type="text/javascript"></script>
 	<script src="public/javascripts/words-count.js" type="text/javascript"></script>
 	<script src="public/javascripts/scroll-top-control.js" type="text/javascript"></script>
-    <script src="public/javascripts/picture-show.js" type="text/javascript"></script>       
-	<script src="public/javascripts/car-show.js" type="text/javascript"></script>      
+    
 </head>
 <body>
 	<!-- 最顶部快捷条包括登录和注册 -->
@@ -52,19 +51,12 @@
 						
 														 <div class="list-back">
 															<div>
-																<i class="icon icon-color icon-messages"></i>
 																
-																<object type="application/x-shockwave-flash"
-																	data="player/audioplayer.swf" width="290" height="24"
-																	id="audioplayer${guoyulist.id}">
-																	<param name="movie" value="player/audioplayer.swf" />
-																	<param name="FlashVars"
-																		value="playerID=${guoyulist.player}&soundFile=${guoyulist.path}" />
-																	<param name="quality" value="high" />
-																	<param name="menu" value="false" />
-																	<param name="wmode" value="transparent" />
-																</object>
-																
+																<audio controls="controls" height="100" width="100">
+																	  <source src="开不了口.mp3" type="audio/mp3" />
+																	<embed height="100" width="100" src="${guoyulist.path}" />${guoyulist.path}
+																</audio>
+																${guoyulist.path}
 															</div>
 															 
 														 </div>

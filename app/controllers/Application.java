@@ -15,12 +15,11 @@ public class Application extends Controller {
         }
 		List<Post> postList = Post.find("order by id desc").from(0).fetch(3);
 		List<Music> yueYuList=Music.find("byTypeOrderByPlayCount","粤语歌").from(0).fetch(15);
-		//List<Music> guoYuList=Music.find("byTypeOrderByPlayCount","国语歌").from(0).fetch(15);
+		List<Music> guoYuList=Music.find("byTypeOrderByPlayCount","国语歌").from(0).fetch(15);
 		List<Music> yingWenList=Music.find("byTypeOrderByPlayCount","英文歌").from(0).fetch(15);
 		List<Music> hanWenList=Music.find("byTypeOrderByPlayCount","韩语歌").from(0).fetch(15);
-		//System.out.println("------------------------guoYuList.size()="+guoYuList.size());
-		System.out.println("------------------------Music.size()="+Music.findAll().size());
-		List<Music> guoYuList=Music.findAll();
+		System.out.println("------------------------guoYuList.size()="+guoYuList.size());
+
        render(postList,yueYuList,guoYuList,yingWenList,hanWenList);
     }
 
