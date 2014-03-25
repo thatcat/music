@@ -12,6 +12,11 @@ models.User(admin2):
     email:      scauMilk@163.com
     isAdmin:    true
 
+models.User(user):
+    username:   user
+    password:   user
+    email:      scauMilk@163.com
+    isAdmin:    false
 
 
 

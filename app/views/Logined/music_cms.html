@@ -65,30 +65,31 @@
 				<!-- 小道消息管理 -->
 				<li>
 					<div class="news-cms">
-						<a href="/addSeriesData.html">删除音乐</a>
+						<a href="/deleteMusic.html">删除音乐</a>
 					</div>
 				</li>
 				
 				<!-- 留言管理 -->
 				<li>				
 					<div class="words-cms">
-						<a href="post_cms.html">留言管理</a>
+						<a href="/post_cms.html">留言管理</a>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<!-----------------------上传音乐开始--------------------->
-	<div align="left">
+	<div class="tabbable tabs-top">
 		<form action="@@{Logined.uploadMusic()}" method="post" enctype="multipart/form-data">
 
 			音乐名称：<input type="text" name="musicName"/></br>		
 			歌    手：<input type="text" name="player"/></br>
-			类    型：<input type="text" name="type"/>所属类别：粤语歌、国语歌、英文歌、韩语歌,要包含一个“歌”字或填其他</br>
+			类    型：<input type="text" name="type"/>所属类别：粤语、国语、英文、韩文,不要包含一个“歌”字或填其他</br>
 			专辑：<input type="text" name="albums"/></br>	
 			发行日期：<input type="text" name="publicDate"/></br>
 			上传文件<input type="file" name="musicFile"/></br>
 			<input type="submit" value="上传"/>
+			${flash.success}
 
 		</form>											
 	</div>

@@ -30,9 +30,17 @@ public class Logined extends Controller {
         } 
         return null;
     }
+
+	@Before
+	static void checkLogined() { 
+		    if(connected() == null) {
+            //跳转到登录画面
+            Application.login();
+        }
+	}
 	
 	/**添加管理员权限拦截，不是管理员，不能执行以下字符串数组内的方法*/
-	@Before(only={"order_cms","post_cms","deletePost","deleteComment","deal_refresh","auth_delete","addSeries","saveCarSeries"}) 
+	@Before(only={"music_cms","post_cms","deletePost","deleteComment","deal_refresh","auth_delete","addSeries","saveCarSeries"}) 
 	static void checkAdmin() { 
 		User user = connected();
 		if(user == null)
@@ -306,6 +314,11 @@ public class Logined extends Controller {
 
 	public static void search() {
 		
+	}
+
+	public static void deleteMusic() {
+		List<Music> allMusicList=Music.findAll();
+		render(allMusicList);
 	}
 
 

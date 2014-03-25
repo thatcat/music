@@ -45,8 +45,7 @@
 
 	<!---------------------------------------------------------排行榜开始-------------------------------------->
        	<div class="words-title" align="center">
-			<h1>国语歌</h1>
-		</div>
+			<h1>国语</h1>
 		#{list items:guoYuList,as:'guoyulist'}
 						
 														 <div class="list-back" align="center">
@@ -56,12 +55,58 @@
 																	<source src="${guoyulist.path}" type="audio/ogg" />
 																	暂时播放不了哦..
 																</audio>														
-															</div>
-															 
-														 </div>
-													
+															</div>													 
+														 </div>												
           #{/list}
-	
+	</div>
+
+	<div class="words-title" align="center">
+			<h1>粤语</h1>	
+		#{list items:yueYuList,as:'yueyulist'}
+						
+														 <div class="list-back" align="center">
+															<div>	${yueyulist.musicName}-${yueyulist.player}														
+																<audio controls="controls" height="100" width="100">
+																	  <source src="${yueyulist.path}" type="audio/mp3" />
+																	<source src="${yueyulist.path}" type="audio/ogg" />
+																	暂时播放不了哦..
+																</audio>														
+															</div>													 
+														 </div>												
+          #{/list}
+	</div>
+
+		<div class="words-title" align="center">
+			<h1>英文</h1>	
+		#{list items:yingWenList,as:'yingwenlist'}
+						
+														 <div class="list-back" align="center">
+															<div>	${yingwenlist.musicName}-${yingwenlist.player}														
+																<audio controls="controls" height="100" width="100">
+																	  <source src="${yingwenlist.path}" type="audio/mp3" />
+																	<source src="${yingwenlist.path}" type="audio/ogg" />
+																	暂时播放不了哦..
+																</audio>														
+															</div>													 
+														 </div>												
+          #{/list}
+	</div>
+
+	<div class="words-title" align="center">
+			<h1>韩文</h1>	
+		#{list items:hanWenList,as:'hanwenlist'}
+						
+														 <div class="list-back" align="center">
+															<div>	${hanwenlist.musicName}-${hanwenlist.player}														
+																<audio controls="controls" height="100" width="100">
+																	  <source src="${hanwenlist.path}" type="audio/mp3" />
+																	<source src="${hanwenlist.path}" type="audio/ogg" />
+																	暂时播放不了哦..
+																</audio>														
+															</div>													 
+														 </div>												
+          #{/list}
+	</div>
 	<!----------------------------------------------------------排行榜结束-------------------------------------->
 
 	<!-- 客户留言区 -->
