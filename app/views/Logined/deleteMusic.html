@@ -1,49 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- <html xmlns="http://www.w3.org/1999/xhtml"> -->
-<html xmlns="http://www.w3.org/1999/xhtml" manifest="public/car.manifest">
-<head>
-	<title>以歌会友 - 每一首歌都有一个故事</title>
-	<meta name="keywords" content="以歌会友" />
-	<meta name="discription" content=" 每一首歌，都有一个故事" />
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<link href="public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
-	<link href="public/stylesheets/opa-icons.css"  rel="stylesheet" type="text/css" />
-	<link href="public/stylesheets/index.css" rel="stylesheet" type="text/css" />
-	<link rel="shortcut icon" href="public/images/favicon.ico" />
-	<script src="public/javascripts/jquery1.83.js" type="text/javascript"></script>
-	<script src="public/javascripts/words-count.js" type="text/javascript"></script>
-	<script src="public/javascripts/scroll-top-control.js" type="text/javascript"></script>
-    
-</head>
-<body>
-	<!-- 最顶部快捷条包括登录和注册 -->
-	<div class="header">
-		<div class="banner">
-			<a href="index.html" class="banner-title">以歌会友</a>
-			<span class="milk-theme">每一首歌都有一个故事</span>
-			<div class="login-regist">
-				<a href="login.html" id="login" class="login">登录</a>
-				|
-				<a href="register.html" class="regist">注册</a>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-	<!-- 右边固定在屏幕边上的联系方式 --> 
-	<div class="contact-us">
-		<div class="contact-area">
-			<a href="email.html">联系我们</a>
-		</div>
-	</div>
-	
+#{extends 'app/views/Logined/head.html' /}
 	<!----------------------------------------------------------------------------- 搜索框开始 --------------------------------------------------> 
-	<div id="carSearch">
+	<div id="">
 	
 
 	</div>
 	<!----------------------------------------------------------------------------- 搜索框结束 ------------------------------------------------->
 
-	<!---------------------------------------------------------排行榜开始-------------------------------------->
+	<!---------------------------------------------------------删除开始-------------------------------------->
        	<div class="words-title" align="center">
 			<h1>国语</h1>
 		#{list items:allMusicList,as:'allmusiclist'}
@@ -55,96 +18,4 @@
           #{/list}
 	</div>
 
-	<!----------------------------------------------------------排行榜结束-------------------------------------->
-
-	<!-- 客户留言区 -->
-	<div class="words-board" id="words-board">
-		<div class="words-title">
-			<h1>留言区</h1>
-		</div>
-		<a href="words_board.html" class="more">more</a>
-		#{form @Logined.savePost2() }
-			<div class="make-words">
-			#{field 'post.content'}
-				<div class="words-area">
-					<!-- 注意这里的 textarea 中间的空格会算进字数统计中 -->
-					<textarea id="words" name="${field.name}" onKeyDown="maxWords(this.form)" onKeyUp="maxWords(this.form)" onblur="if(this.value==''){ this.value='来，说说你对国产汽车的寄语 ..'; }" onfocus="if(this.value=='来，说说你对国产汽车的寄语 ..'){ this.value=''; }">来，说说你对国产汽车的寄语 ..</textarea>
-				</div>
-		    #{/field }
-				<div class="count-submit-bar">
-					<input type="text" name="maxNum" value="190" readonly="readonly" class="words-count" id="words-count">
-					<button onclick="#" class="btn btn-info words-submit" type="submit">发表</button>			
-				</div>
-			</div>
-		#{/form}
-		<div class="words-list">
-	<ul id="list">
-#{list items:postList,as:'postlist'}
-       		             	<!-- 每个 li 是 1 页留言，包括 10 条留言（即 10 个 div）-->
-		             	<li>
-                      <div class="words-list" id="words-list">
-		             		<!-- 下面是一条留言的 div 开始 -->
-			                <div class="a-list"> 
-														<div class="list-details">
-															<i class="icon32 icon-color icon-bullet-off"></i>
-																	<span class="name">${postlist.author}</span>
-																	<input type="hidden" class="isAdmin" value="${postlist.author.isCarOwner}" />
-																	<input type="hidden" class="authType" value="${postlist.author.authType}" />
-																	<span class="time">${postlist.postedAt}</span>
-																	<span class="floor">${postlist.id}</span>
-																			<span class="comment">
-																			<i class="icon icon-color icon-messages" title="回复数目"></i>${postlist.comments.size()}
-																			</span>						
-														 </div>
-					         	<p class="list-content">${postlist.content}</p>
-							 </div>
-						#{list items:postlist.comments,as:'commentlist'}
-						
-														 <div class="list-back">
-															<div>
-																<i class="icon icon-color icon-messages"></i>
-																<span class="name back-name">${commentlist.author}</span>
-																<input type="hidden" class="authType" value="${commentlist.author.authType}" />
-																<input type="hidden" class="isAdmin" value="${commentlist.author.isCarOwner}" />
-																<span class="back-time">${commentlist.postedAt}</span>
-																<p class="back-text">${commentlist.content}</p>
-																
-															</div>
-															 
-														 </div>
-														
-                      #{/list}
-					    #{form @Logined.postComment(postlist.id, content)}
-				  #{field 'content'}
-				   <p>
-					
-					<input class="input-box" type="textarea" name="${field.name}" id="loginusername" }" required="required" placeholder="我来说一句" >	
-					<input class="btn btn-info" type="submit" name="submit" value="评论">
-
-				  </p>
-				  #{/field}
-				#{/form}
-					 </div>
-
-</li>
-
-	<!-- container -->
-       
-#{/list}
-	</ul>	
-	<!-- 页脚 -->
-	<div class="footer">
-		<p>COPYRIGHT © 2013 <p>
-	</div>
-	<!-- 右下角回顶部固定按钮 -->
-	<div id="topcontrol" class="scrollTop" title="回顶部看看">
-		<img src="/public/images/scrollTop.gif"/>
-	</div>
-
-    
-        #{list items:carBrandList,as:'carbrandlist'}
-        <input class="brandParise" type="hidden" value=${carbrandlist.parise} /> 
-        #{/list}
-    
-</body>
-</html>
+	<!----------------------------------------------------------删除结束-------------------------------------->
