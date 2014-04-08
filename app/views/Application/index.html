@@ -13,6 +13,8 @@
 	<script src="public/javascripts/jquery1.83.js" type="text/javascript"></script>
 	<script src="public/javascripts/words-count.js" type="text/javascript"></script>
 	<script src="public/javascripts/scroll-top-control.js" type="text/javascript"></script>
+	<link href="public/stylesheets/showSeries.css" rel="stylesheet" type="text/css" />
+	<script src="public/javascripts/showSeries.js" type="text/javascript"></script>
     
 </head>
 <body>
@@ -43,70 +45,204 @@
 	</div>
 	<!----------------------------------------------------------------------------- 搜索框结束 ------------------------------------------------->
 
-	<!---------------------------------------------------------排行榜开始-------------------------------------->
-       	<div class="words-title" align="center">
-			<h1>国语</h1>
+	<!------------------------------------------------国语榜开始---------------------------------------------------------->
+
+	<div id="carContent">
+	<div class="words-title" align="center">
+		<h1>国语top10</h1>
+	</div>
 		#{list items:guoYuList,as:'guoyulist'}
-						
-														 <div class="list-back" align="center">
+		<div class="carSeries">
+            <div class="carSerieseContent">
+    			<div class="showCar">
+				 <div class="list-back" align="center">
 															<div>	${guoyulist.musicName}-${guoyulist.player}														
 																<audio controls="controls" height="100" width="100">
 																	  <source src="${guoyulist.path}" type="audio/mp3" />
 																	<source src="${guoyulist.path}" type="audio/ogg" />
 																	暂时播放不了哦..
 																</audio>														
-															</div>													 
-														 </div>												
-          #{/list}
-	</div>
-
+															</div>		
+														</div>		
+                    <div class="carSeries-wrap">                                                  
+                        <a href="#" class="showComment" >点评数:${guoyulist.musicComments.size()}</a>
+                    </div>
+    			</div>
+                <div class="carCommentsForm">
+                    <div class="commentForm">
+                        <textarea class="textarea input-box" name="carCommentType" class="carCommentType" required="required" placeholder="我来点评..." ></textarea>
+                        <input type="hidden" name="id" value="${guoyulist.id}" />
+                        <input class="commentBtn btn btn-info" type="button" name="submit" value="点评">
+                    </div>
+        			<ul class="carComments">
+        			#{list items:guoyulist.musicComments,as:'musiccomments'}
+        				<li>
+                            <i class="icon32 icon-color icon-bullet-off"></i>
+        					<span class="author">${carcomments.user}</span>
+                            <span class="time">${carcomments.musicCommentTime}</span>
+        					<div class="comment">${carcomments.commentType}</div>
+        				</li>
+        			#{/list}
+        			</ul>
+                </div>
+    			<div class="clear"></div>
+    		</div>
+        </div>
+		#{/list}
+		#{else}
+			<h2>暂时还没有国语榜的数据喔..
+		#{/else}
+    </div>
+	<!------------------------------------------------国语榜结束---------------------------------------------------------->
+	
+	<!------------------------------------------------粤语榜开始---------------------------------------------------------->
+	<div id="carContent">
 	<div class="words-title" align="center">
-			<h1>粤语</h1>	
+		<h1>粤语top10</h1>
+	</div>
 		#{list items:yueYuList,as:'yueyulist'}
-						
-														 <div class="list-back" align="center">
+		<div class="carSeries">
+            <div class="carSerieseContent">
+    			<div class="showCar">
+				 <div class="list-back" align="center">
 															<div>	${yueyulist.musicName}-${yueyulist.player}														
 																<audio controls="controls" height="100" width="100">
 																	  <source src="${yueyulist.path}" type="audio/mp3" />
 																	<source src="${yueyulist.path}" type="audio/ogg" />
 																	暂时播放不了哦..
 																</audio>														
-															</div>													 
-														 </div>												
-          #{/list}
+															</div>		
+														</div>		
+                    <div class="carSeries-wrap">                                                  
+                        <a href="#" class="showComment" >点评数:${yueyulist.musicComments.size()}</a>
+                    </div>
+    			</div>
+                <div class="carCommentsForm">
+                    <div class="commentForm">
+                        <textarea class="textarea input-box" name="carCommentType" class="carCommentType" required="required" placeholder="我来点评..." ></textarea>
+                        <input type="hidden" name="id" value="${yueyulist.id}" />
+                        <input class="commentBtn btn btn-info" type="button" name="submit" value="点评">
+                    </div>
+        			<ul class="carComments">
+        			#{list items:yueyulist.musicComments,as:'musiccomments'}
+        				<li>
+                            <i class="icon32 icon-color icon-bullet-off"></i>
+        					<span class="author">${carcomments.user}</span>
+                            <span class="time">${carcomments.musicCommentTime}</span>
+        					<div class="comment">${carcomments.commentType}</div>
+        				</li>
+        			#{/list}
+        			</ul>
+                </div>
+    			<div class="clear"></div>
+    		</div>
+        </div>
+		#{/list}
+		#{else}
+			<h2>暂时还没有粤语榜的数据喔..
+		#{/else}
+    </div>
+	<!------------------------------------------------粤语榜结束---------------------------------------------------------->
+	
+	<!------------------------------------------------英语榜开始---------------------------------------------------------->
+	<div id="carContent">
+	<div class="words-title" align="center">
+		<h1>英语top10</h1>
 	</div>
-
-		<div class="words-title" align="center">
-			<h1>英文</h1>	
 		#{list items:yingWenList,as:'yingwenlist'}
-						
-														 <div class="list-back" align="center">
+		<div class="carSeries">
+            <div class="carSerieseContent">
+    			<div class="showCar">
+				 <div class="list-back" align="center">
 															<div>	${yingwenlist.musicName}-${yingwenlist.player}														
 																<audio controls="controls" height="100" width="100">
 																	  <source src="${yingwenlist.path}" type="audio/mp3" />
 																	<source src="${yingwenlist.path}" type="audio/ogg" />
 																	暂时播放不了哦..
 																</audio>														
-															</div>													 
-														 </div>												
-          #{/list}
-	</div>
-
+															</div>		
+														</div>		
+                    <div class="carSeries-wrap">                                                  
+                        <a href="#" class="showComment" >点评数:${yingwenlist.musicComments.size()}</a>
+                    </div>
+    			</div>
+                <div class="carCommentsForm">
+                    <div class="commentForm">
+                        <textarea class="textarea input-box" name="carCommentType" class="carCommentType" required="required" placeholder="我来点评..." ></textarea>
+                        <input type="hidden" name="id" value="${yingwenlist.id}" />
+                        <input class="commentBtn btn btn-info" type="button" name="submit" value="点评">
+                    </div>
+        			<ul class="carComments">
+        			#{list items:yingwenlist.musicComments,as:'musiccomments'}
+        				<li>
+                            <i class="icon32 icon-color icon-bullet-off"></i>
+        					<span class="author">${carcomments.user}</span>
+                            <span class="time">${carcomments.musicCommentTime}</span>
+        					<div class="comment">${carcomments.commentType}</div>
+        				</li>
+        			#{/list}
+        			</ul>
+                </div>
+    			<div class="clear"></div>
+    		</div>
+        </div>
+		#{/list}
+		#{else}
+			<h2>暂时还没有英语榜的数据喔..
+		#{/else}
+    </div>
+	<!------------------------------------------------英语榜结束---------------------------------------------------------->
+	
+	<!------------------------------------------------韩语榜开始---------------------------------------------------------->
+	<div id="carContent">
 	<div class="words-title" align="center">
-			<h1>韩文</h1>	
+		<h1>韩语top10</h1>
+	</div>
 		#{list items:hanWenList,as:'hanwenlist'}
-						
-														 <div class="list-back" align="center">
+		<div class="carSeries">
+            <div class="carSerieseContent">
+    			<div class="showCar">
+				 <div class="list-back" align="center">
 															<div>	${hanwenlist.musicName}-${hanwenlist.player}														
 																<audio controls="controls" height="100" width="100">
 																	  <source src="${hanwenlist.path}" type="audio/mp3" />
 																	<source src="${hanwenlist.path}" type="audio/ogg" />
 																	暂时播放不了哦..
 																</audio>														
-															</div>													 
-														 </div>												
-          #{/list}
-	</div>
+															</div>		
+														</div>		
+                    <div class="carSeries-wrap">                                                  
+                        <a href="#" class="showComment" >点评数:${hanwenlist.musicComments.size()}</a>
+                    </div>
+    			</div>
+                <div class="carCommentsForm">
+                    <div class="commentForm">
+                        <textarea class="textarea input-box" name="carCommentType" class="carCommentType" required="required" placeholder="我来点评..." ></textarea>
+                        <input type="hidden" name="id" value="${hanwenlist.id}" />
+                        <input class="commentBtn btn btn-info" type="button" name="submit" value="点评">
+                    </div>
+        			<ul class="carComments">
+        			#{list items:hanwenlist.musicComments,as:'musiccomments'}
+        				<li>
+                            <i class="icon32 icon-color icon-bullet-off"></i>
+        					<span class="author">${carcomments.user}</span>
+                            <span class="time">${carcomments.musicCommentTime}</span>
+        					<div class="comment">${carcomments.commentType}</div>
+        				</li>
+        			#{/list}
+        			</ul>
+                </div>
+    			<div class="clear"></div>
+    		</div>
+        </div>
+		#{/list}
+		#{else}
+			<h2>暂时还没有韩语榜的数据喔..
+		#{/else}
+    </div>
+	<!------------------------------------------------韩语榜结束---------------------------------------------------------->
+	
+		
 	<!----------------------------------------------------------排行榜结束-------------------------------------->
 
 	<!-- 客户留言区 -->
