@@ -110,4 +110,31 @@ public class Application extends Controller {
 	}
  */
 
+ 	/**添加音乐点评
+	 */
+	public static void addMusicComment(Long id, String musicCommentType ) {  
+			if(Logined.connected()==null)
+		{
+			 flash.error("请先登录！");
+            //跳转到登录画面
+            Application.login();
+        }		   
+		System.out.println("test-------------------------");
+		User author=null;
+        String userName = session.get("user");  
+		 if(userName != null) {
+            author=User.find("byUsername", userName).first();
+        } 
+		Music music = Music.find("byId",id).first();	 
+		MusicComment musicComment = new MusicComment();
+		musicComment.commentContent = musicCommentType;
+		musicComment.commentTime=new Date();
+		musicComment.music=music;
+		musicComment.user=author;
+		author.integration=author.integration+2;
+		author.save();
+		musicComment.save();
+		
+	}
+
 }

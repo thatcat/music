@@ -14,6 +14,9 @@ GET		/email.html				Logined.email
 GET		/post_cms.html			Logined.post_cms
 GET		/deleteMusic.html			Logined.deleteMusic
 
+POST		/addmusiccomment	Application.addMusicComment
+
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

@@ -12,6 +12,16 @@ import play.*;
 import models.*;
 
 public class Logined extends Controller {
+
+	@Before
+	static void checkLogined() { 
+		    if(connected() == null) {
+            //跳转到登录画面
+            Application.login();
+        }
+	}
+
+
     @Before
     static void addUser() {
         User user = connected();
@@ -19,8 +29,9 @@ public class Logined extends Controller {
             renderArgs.put("user", user);
         }
     }
-    
+
     static User connected() {
+		System.out.println("test-------------------------4");
         if(renderArgs.get("user") != null) {
             return renderArgs.get("user", User.class);
         }
@@ -30,14 +41,6 @@ public class Logined extends Controller {
         } 
         return null;
     }
-
-	@Before
-	static void checkLogined() { 
-		    if(connected() == null) {
-            //跳转到登录画面
-            Application.login();
-        }
-	}
 	
 	/**添加管理员权限拦截，不是管理员，不能执行以下字符串数组内的方法*/
 	@Before(only={"music_cms","post_cms","deletePost","deleteComment","deal_refresh","auth_delete","addSeries","saveCarSeries"}) 
@@ -319,6 +322,27 @@ public class Logined extends Controller {
 	public static void deleteMusic() {
 		List<Music> allMusicList=Music.findAll();
 		render(allMusicList);
+	}
+
+	/**添加音乐点评
+	 */
+	public static void addMusicComment(Long id, String musicCommentType ) {  
+		System.out.println("test-------------------------");
+		User author=null;
+        String userName = session.get("user");  
+		 if(userName != null) {
+            author=User.find("byUsername", userName).first();
+        } 
+		Music music = Music.find("byId",id).first();	 
+		MusicComment musicComment = new MusicComment();
+		musicComment.commentContent = musicCommentType;
+		musicComment.commentTime=new Date();
+		musicComment.music=music;
+		musicComment.user=author;
+		author.integration=author.integration+2;
+		author.save();
+		musicComment.save();
+		logined();
 	}
 
 

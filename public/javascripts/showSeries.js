@@ -37,8 +37,8 @@ $(document).ready(function() {
         text = $(this).parent().find("textarea").eq(0);
         $.ajax({
             type: "POST",
-            url: "/application/addcarcomment",
-            data: "carCommentType="+c+"&id="+d,
+            url: "/addmusiccomment",
+            data: "musicCommentType="+c+"&id="+d,
             success: function() {
                 // location.reload();
                 text.val("");
@@ -50,11 +50,11 @@ $(document).ready(function() {
     $(".showComment").toggle(function() {
         var comment = $(this).parent().parent().parent().find(".carCommentsForm");
         comment.slideDown();
-        $(this).text("关闭");
+        
     }, function() { 
         var comment = $(this).parent().parent().parent().find(".carCommentsForm");
         comment.slideUp();
-        $(this).text("查看");
+       
     });
 
     var list_len = $(".car-show-list").length;
