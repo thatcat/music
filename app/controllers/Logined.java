@@ -219,7 +219,7 @@ public class Logined extends Controller {
         post_cms();
     }
 
-	 public static void music_customer(){
+	 public static void personal(){
        render();
     }
 
@@ -227,14 +227,14 @@ public class Logined extends Controller {
 		validation.required(verifyNewPassword);
         validation.equals(verifyNewPassword, newPassword).message("Your password doesn't match");
         if(validation.hasErrors()) {
-            render("@Logined.music_customer", verifyNewPassword);
+            render("@Logined.personal", verifyNewPassword);
          }
 		 User user = connected();
 		 newPassword=Md5Util.getMD5Str(newPassword);				//MD5加密
 		 user.password=newPassword;
 		 user.save();
 		 flash.success("修改成功" );
-		 music_customer();
+		 personal();
 		}
 
 		/**上传音乐,music为上传的音乐
@@ -309,7 +309,7 @@ public class Logined extends Controller {
 			 {
 				e.printStackTrace(); 
 			 }
-			music_customer();
+			personal();
 	 }
 	 */
 

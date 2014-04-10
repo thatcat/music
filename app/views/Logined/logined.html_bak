@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" manifest="public/car.manifest">
 <head>
-	<title>国产汽车网 - 让更多人了解我们自己的民族品牌</title>
+	<title>情歌网 - 每一首歌，都有一个故事</title>
 	<meta name="keywords" content="国产汽车" />
 	<meta name="discription" content="国产汽车，为的是一份情怀" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -20,8 +20,8 @@
 	<!-- 最顶部快捷条包括登录和注册 -->
 	<div class="header">
 		<div class="banner">
-			<a href="index.html" class="banner-title">国产汽车网</a>
-			<span class="milk-theme">我们的品牌，我们的情怀</span>
+			<a href="index.html" class="banner-title">情歌网</a>
+			<span class="milk-theme">每一首歌，都有一个故事每一首歌，都有一个故事每一首歌，都有一个故事每一首歌，都有一个故事</span>
 			<div class="login-regist">
 			当前登录：
             <a href="#" style="cursor:default;" class="login"> ${user.username}</a>

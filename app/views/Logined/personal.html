@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>国产汽车网后台管理</title>
+	<title>情歌网后台管理</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
             
 	<link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -13,7 +13,7 @@
 <body>
 	<div class="header">
     <div class="banner">
-        <a href="index.html" class="banner-title">国产汽车网</a>
+        <a href="/" class="banner-title">情歌网</a>
 			<span class="milk-theme">个人中心</span>
 		<div class="admin-login">
 			当前登录：
@@ -69,30 +69,7 @@
 		</div>
 <!---------------------------------------------------修改密码结束------------------------------------------------------->
 	
-<!---------------------------------------------------车主申请开始------------------------------------------------------>
-<div id="uploadPhoto">
-	<p>
-						上一次认证是否通过： #{if user.isCarOwner}通过， 认证内容:${user.authType}#{/if} #{else}不通过 #{/else} 
-	</p>
-	#{form @uploadPhoto(), enctype:'multipart/form-data'}
-	<p>
-		${flash.success}
-	</p>
-    <div class="input-control">
-		<label for="photo">上传购车证明照片</label>
-		<input type="file" id="photo" name="photo" />
-    </div>
-    <div class="input-control">
-		<label for="idcard">上传身份证明照片</label>
-		<input type="file" id="idcard" name="idcard" />
-    </div>
-    <div class="input-control">
-		<input type="submit" value="确定" />
-    </div>
-	#{/}
-	
-</div>
-<!---------------------------------------------------车主申请结束------------------------------------------------------->
+
 
 </div>
 </body>

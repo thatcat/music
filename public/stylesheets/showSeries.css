@@ -59,10 +59,8 @@
 	height: 280px;
 }
 #carContent .carSerieseContent .carSeries-wrap {
-	display: inline-block;
-	width: 252px;
-	height: 260px;
 	vertical-align: top;
+	font-size:12px;
 }
 #carContent .carSeries .carSeriesTable {
 	width: 252px;
@@ -73,13 +71,7 @@
 	border-radius: 4px;
 
 }
-#carContent .carSeries .carSeriesTable td {
-	padding: 8px;
-	line-height: 20px;
-	text-align: center;
-	vertical-align: top;
-	border-top: 1px solid #ddd;
-}
+
 .level {
 	text-indent: -999px;
 	display: none;
@@ -104,10 +96,9 @@
 	background: url('../images/lanrentuku.png') no-repeat 0 -25px;
 }
 .showComment {
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
-	margin-left: 100px;
+	width: 60px;
+	height: 30px;
+	border-radius: 5px;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
@@ -123,7 +114,7 @@
 	color: white;
 	text-shadow: none;
 	border: none;
-	line-height: 100px;
+	line-height: 30px;
 	padding: 0px;
 	display: inline-block;
 	vertical-align: middle;
@@ -131,8 +122,6 @@
 	margin: 0;
 	text-decoration: none;
 	text-align: center;
-	position: relative;
-	left: 100px;
 }
 .showComment:hover {
 	background: #888;
@@ -171,4 +160,17 @@
 	margin-left: 13px;
 	line-height: 40px;
 	font-size: 14px;
+}
+#carContent img.list-back-img{
+	width:30px;
+	height:30px;
+	vertical-align:top;
+}
+.list-back audio{
+	vertical-align:bottom;
+}
+
+.list-back{
+	font-size:20px;
+	padding-left: 0px;
 }

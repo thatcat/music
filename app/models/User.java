@@ -12,7 +12,6 @@ public class User extends Model {
     @Required
     @MaxSize(15)
     @MinSize(2)
-   
     public String username;
     
     @Required
@@ -30,7 +29,7 @@ public class User extends Model {
 	public int integration; //积分
 
 	@As("yyyy-MM-dd HH:mm:ss")
-	public Date registerDate; //认证日期
+	public Date registerDate; //注册日期
 
 	@OneToMany(mappedBy="user", cascade=CascadeType.ALL)
     public List<MusicComment> musicComments;

@@ -20,7 +20,7 @@ public class Application extends Controller {
 		List<Music> hanWenList=Music.find("byTypeOrderByPlayCount","韩文").from(0).fetch(15);
 		System.out.println("------------------------guoYuList.size()="+guoYuList.size());
 
-       render(postList,yueYuList,guoYuList,yingWenList,hanWenList);
+       render(user,postList,yueYuList,guoYuList,yingWenList,hanWenList);
     }
 
     public static void register(String message) {
@@ -136,5 +136,11 @@ public class Application extends Controller {
 		musicComment.save();
 		
 	}
+	
+	/**歌曲搜索
+	 */
+	public static void search(String name, String player, String lyric ) { 
+
+	}	
 
 }
