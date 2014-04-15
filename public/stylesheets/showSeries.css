@@ -26,7 +26,9 @@
     background: #fff;
 }
 .showCar {
-	height: 312px;
+	height: 12px;
+	padding-left: 0px;
+	width: 900px;
 }
 .showCar .car-show-box {
     width: 400px;
@@ -49,7 +51,7 @@
     float: left;
 }
 #carContent .carSerieseContent {
-	width: 660px;
+	width: 760px;
 	margin: 0 auto;
 	/*background: #fff;*/
 }
@@ -59,7 +61,7 @@
 	height: 280px;
 }
 #carContent .carSerieseContent .carSeries-wrap {
-	vertical-align: top;
+	vertical-align: middle;
 	font-size:12px;
 }
 #carContent .carSeries .carSeriesTable {
@@ -162,15 +164,18 @@
 	font-size: 14px;
 }
 #carContent img.list-back-img{
-	width:30px;
+	width:40px;
 	height:30px;
 	vertical-align:top;
 }
 .list-back audio{
-	vertical-align:bottom;
+	vertical-align:middle;
+	height: 15px;
 }
 
 .list-back{
 	font-size:20px;
 	padding-left: 0px;
+	vertical-align:middle;
+	
 }

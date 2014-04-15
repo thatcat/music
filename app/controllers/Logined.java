@@ -273,7 +273,7 @@ public class Logined extends Controller {
 			 music.musicName = musicName;
 			 music.player = player;
 			 music.albums = albums;
-			 music.type = type;
+			 music.type = Integer.parseInt(type);
 			 //music.publicDate = 
 			 music.uploadDate = new Date ();
 			 music.path = "public\\music\\"+musicFile.getName();

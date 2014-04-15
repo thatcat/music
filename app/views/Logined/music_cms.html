@@ -1,12 +1,13 @@
 #{extends 'app/views/Logined/head.html' /}
 	<!-----------------------上传音乐开始--------------------->
-	<div class="tabbable tabs-top">
+	<div id="register">
 		<form action="@@{Logined.uploadMusic()}" method="post" enctype="multipart/form-data">
 
 			音乐名称：<input type="text" name="musicName"/></br>		
-			歌    手：<input type="text" name="player"/></br>
-			类    型：<input type="text" name="type"/>所属类别：粤语、国语、英文、韩文,不要包含一个“歌”字或填其他</br>
-			专辑：<input type="text" name="albums"/></br>	
+			歌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手：<input type="text" name="player"/></br>
+			类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：<input type="text" name="type" /></br>
+			<h7>(所属类别,只填数字：国语歌为1、粤语歌为2、英文歌为3、韩文歌为4)</h7></br>
+			专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;辑：<input type="text" name="albums"/></br>	
 			发行日期：<input type="text" name="publicDate"/></br>
 			上传文件<input type="file" name="musicFile"/></br>
 			<input type="submit" value="上传"/>

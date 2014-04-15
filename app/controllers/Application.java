@@ -14,10 +14,10 @@ public class Application extends Controller {
         		Logined.music_cms();
         }
 		List<Post> postList = Post.find("order by id desc").from(0).fetch(3);
-		List<Music> yueYuList=Music.find("byTypeOrderByPlayCount","粤语").from(0).fetch(15);
-		List<Music> guoYuList=Music.find("byTypeOrderByPlayCount","国语").from(0).fetch(15);
-		List<Music> yingWenList=Music.find("byTypeOrderByPlayCount","英文").from(0).fetch(15);
-		List<Music> hanWenList=Music.find("byTypeOrderByPlayCount","韩文").from(0).fetch(15);
+		List<Music> guoYuList=Music.find("byTypeOrderByPlayCount",1).from(0).fetch(15);
+		List<Music> yueYuList=Music.find("byTypeOrderByPlayCount",2).from(0).fetch(15);
+		List<Music> yingWenList=Music.find("byTypeOrderByPlayCount",3).from(0).fetch(15);
+		List<Music> hanWenList=Music.find("byTypeOrderByPlayCount",4).from(0).fetch(15);
 		System.out.println("------------------------guoYuList.size()="+guoYuList.size());
 
        render(user,postList,yueYuList,guoYuList,yingWenList,hanWenList);

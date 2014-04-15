@@ -87,23 +87,22 @@
 
 	<div id="carContent">
 	<div class="words-title" align="center">
-		<h1>国语top10</h1>
+		<h1>国语top5</h1>   <a href="#">更多>></a>
 	</div>
 		#{list items:guoYuList,as:'guoyulist'}
 		<div class="carSeries">
             <div class="carSerieseContent">
     			<div class="showCar">
 					<div class="list-back" >
-						<div>	${guoyulist.musicName} →_→ ${guoyulist.player}														
-							<audio controls="controls" height="100" width="100">
+							${guoyulist.musicName} →_→ ${guoyulist.player}														
+							<audio controls="controls" >
 								  <source src="${guoyulist.path}" type="audio/mp3" />
 								<source src="${guoyulist.path}" type="audio/ogg" />
 								暂时播放不了哦..
 							</audio><img src="public/images/praise_icon.png" class="list-back-img" />(${guoyulist.parseCount})	
-							<div class="carSeries-wrap">                                                  
+							<span class="carSeries-wrap">                                                  
 								<a href="#" class="showComment" >点评(${guoyulist.musicComments.size()})</a>
-							</div>
-						</div>	
+							</span>					
 						
 					</div>	
                 
@@ -139,7 +138,7 @@
 	
 	<div id="carContent">
 	<div class="words-title" align="center">
-		<h1>粤语top10</h1>
+		<h1>粤语top5</h1> <a href="#">更多>></a>
 	</div>
 		#{list items:yueYuList,as:'yueyulist'}
 		<div class="carSeries">
@@ -147,14 +146,14 @@
     			<div class="showCar">
 					<div class="list-back" >
 						<div>	${yueyulist.musicName} →_→ ${yueyulist.player}														
-							<audio controls="controls" height="100" width="100">
+							<audio controls="controls" >
 								  <source src="${yueyulist.path}" type="audio/mp3" />
 								<source src="${yueyulist.path}" type="audio/ogg" />
 								暂时播放不了哦..
 							</audio><img src="public/images/praise_icon.png" class="list-back-img" />(${yueyulist.parseCount})	
-							<div class="carSeries-wrap">                                                  
+							<span class="carSeries-wrap">                                                  
 								<a href="#" class="showComment" >点评(${yueyulist.musicComments.size()})</a>
-							</div>
+							</span>
 						</div>	
 						
 					</div>	
@@ -191,7 +190,7 @@
 	
 	<div id="carContent">
 	<div class="words-title" align="center">
-		<h1>英语top10</h1>
+		<h1>英语top5</h1> <a href="#">更多>></a>
 	</div>
 		#{list items:yingWenList,as:'yingwenlist'}
 		<div class="carSeries">
@@ -204,9 +203,9 @@
 								<source src="${yingwenlist.path}" type="audio/ogg" />
 								暂时播放不了哦..
 							</audio><img src="public/images/praise_icon.png" class="list-back-img" />(${yingwenlist.parseCount})	
-							<div class="carSeries-wrap">                                                  
+							<span class="carSeries-wrap">                                                  
 								<a href="#" class="showComment" >点评(${yingwenlist.musicComments.size()})</a>
-							</divs>
+							</span>
 						</div>	
 						
 					</div>	
@@ -243,7 +242,7 @@
 	
 	<div id="carContent">
 	<div class="words-title" align="center">
-		<h1>韩语top10</h1>
+		<h1>韩语top5</h1> <a href="#">更多>></a>
 	</div>
 		#{list items:hanWenList,as:'hanwenlist'}
 		<div class="carSeries">
@@ -251,14 +250,14 @@
     			<div class="showCar">
 					<div class="list-back" >
 						<div>	${hanwenlist.musicName} →_→ ${hanwenlist.player}														
-							<audio controls="controls" height="100" width="100">
+							<audio controls="controls" >
 								  <source src="${hanwenlist.path}" type="audio/mp3" />
 								<source src="${hanwenlist.path}" type="audio/ogg" />
 								暂时播放不了哦..
 							</audio><img src="public/images/praise_icon.png" class="list-back-img" />(${hanwenlist.parseCount})	
-							<div class="carSeries-wrap">                                                  
+							<span class="carSeries-wrap">                                                  
 								<a href="#" class="showComment" >点评(${hanwenlist.musicComments.size()})</a>
-							</div>
+							</span>
 						</div>	
 						
 					</div>	
