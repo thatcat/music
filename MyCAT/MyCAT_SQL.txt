@@ -1,0 +1,41 @@
+CREATE TABLE `user` (
+  `id` bigint NOT NULL ,
+  `email` varchar(255) DEFAULT NULL,
+  `integration` int NOT NULL,
+  `isAdmin` int ,
+  `password` varchar(255) DEFAULT NULL,
+  `registerDate` datetime DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ;
+
+INSERT INTO `user`(id,email,integration,isAdmin,password,registerDate,username) VALUES (1,'scauMilk@163.com',0,1,'21232f297a57a5a743894a0e4a801fc3','2014-04-10 19:05:20','admin');
+
+CREATE TABLE `post` (`id` bigint NOT NULL ,`content` varchar(255),`postedAt` datetime DEFAULT NULL,`author_id` bigint DEFAULT NULL,PRIMARY KEY (`id`), FOREIGN KEY (`author_id`) REFERENCES `user` (`id`)) ;
+
+INSERT INTO post(id,content,postedAt,author_id) VALUES (1,'nice to meet to..','2014-04-11 05:00:44',1);
+INSERT INTO post(id,content,postedAt,author_id) VALUES (2,'welcome..','2014-04-10 05:00:44',1);
+
+CREATE TABLE `comment` (`id` bigint NOT NULL ,`content` varchar(255),`postedAt` datetime DEFAULT NULL,`author_id` bigint DEFAULT NULL,`post_id` bigint DEFAULT NULL,PRIMARY KEY (`id`),FOREIGN KEY (`post_id`) REFERENCES `post` (`id`),FOREIGN KEY (`author_id`) REFERENCES `user` (`id`)) ;
+
+INSERT INTO `comment`(id,content,postedAt,post_id,author_id) VALUES (1,'hi','2014-04-11 04:59:57',1,1);
+INSERT INTO `comment`(id,content,postedAt,post_id,author_id) VALUES (2,'hi2','2014-04-11 04:59:57',2,1);
+
+CREATE TABLE `music` (`id` bigint NOT NULL ,`albums` varchar(255) DEFAULT NULL,`isDelete` tinyint NOT NULL,`musicName` varchar(255) DEFAULT NULL,`parseCount` int NOT NULL,`path` varchar(255) DEFAULT NULL,`playCount` int NOT NULL,`player` varchar(255) DEFAULT NULL,`publicDate` datetime DEFAULT NULL,`type` varchar(255) DEFAULT NULL,`uploadDate` datetime DEFAULT NULL,PRIMARY KEY (`id`)) ;
+
+INSERT INTO `music`(id,albums,isDelete,musicName,parseCount,path,playCount,player,publicDate,type,uploadDate) VALUES (1,'','0','夜空中最亮的星',0,'public\\music\\逃跑计划 - 夜空中最亮的星.mp3',0,'逃跑计划',NULL,1,'2014-03-26 23:44:06');
+
+INSERT INTO `music`(id,albums,isDelete,musicName,parseCount,path,playCount,player,publicDate,type,uploadDate) VALUES 
+(2,'',0,'My Love',0,'public\\music\\WestLife - My Love.mp3',0,'WestLife',NULL,3,'2014-03-26 23:44:35');
+
+CREATE TABLE `musiccomment` (`id` bigint NOT NULL ,`commentContent` varchar(255) DEFAULT NULL,`commentTime` datetime DEFAULT NULL,`music_id` bigint DEFAULT NULL,`user_id` bigint DEFAULT NULL,PRIMARY KEY (`id`),FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),FOREIGN KEY (`music_id`) REFERENCES `music` (`id`)) ;
+
+INSERT INTO `musiccomment`(id,commentcontent,commenttime,music_id,user_id) VALUES (1,'very nice song','2014-04-10 19:05:53',1,1);
+INSERT INTO `musiccomment`(id,commentcontent,commenttime,music_id,user_id) VALUES (2,'a nice song','2014-04-10 19:05:53',2,1);
+
+
+
+
+
+
+

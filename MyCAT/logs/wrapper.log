@@ -1,0 +1,679 @@
+STATUS | wrapper  | 2014/04/11 00:45:38 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/11 00:45:39 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 00:45:39 | Error: missing `server' JVM at `C:\Program Files\Java\jre7\bin\server\jvm.dll'.
+INFO   | jvm 1    | 2014/04/11 00:45:39 | Please install or use the JRE or JDK that contains these missing components.
+ERROR  | wrapper  | 2014/04/11 00:45:39 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:45:43 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/11 00:45:43 | Error: missing `server' JVM at `C:\Program Files\Java\jre7\bin\server\jvm.dll'.
+INFO   | jvm 2    | 2014/04/11 00:45:43 | Please install or use the JRE or JDK that contains these missing components.
+ERROR  | wrapper  | 2014/04/11 00:45:43 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:45:47 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/11 00:45:47 | Error: missing `server' JVM at `C:\Program Files\Java\jre7\bin\server\jvm.dll'.
+INFO   | jvm 3    | 2014/04/11 00:45:47 | Please install or use the JRE or JDK that contains these missing components.
+ERROR  | wrapper  | 2014/04/11 00:45:47 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:45:52 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/11 00:45:52 | Error: missing `server' JVM at `C:\Program Files\Java\jre7\bin\server\jvm.dll'.
+INFO   | jvm 4    | 2014/04/11 00:45:52 | Please install or use the JRE or JDK that contains these missing components.
+ERROR  | wrapper  | 2014/04/11 00:45:52 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:45:56 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/11 00:45:56 | Error: missing `server' JVM at `C:\Program Files\Java\jre7\bin\server\jvm.dll'.
+INFO   | jvm 5    | 2014/04/11 00:45:56 | Please install or use the JRE or JDK that contains these missing components.
+ERROR  | wrapper  | 2014/04/11 00:45:56 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/11 00:45:56 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/11 00:45:56 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/11 00:45:56 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/11 00:54:51 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/11 00:54:51 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 00:54:52 | Error occurred during initialization of VM
+INFO   | jvm 1    | 2014/04/11 00:54:52 | Could not reserve enough space for object heap
+INFO   | jvm 1    | 2014/04/11 00:54:52 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 1    | 2014/04/11 00:54:52 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 00:54:52 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:54:56 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/11 00:54:56 | Error occurred during initialization of VM
+INFO   | jvm 2    | 2014/04/11 00:54:56 | Could not reserve enough space for object heap
+INFO   | jvm 2    | 2014/04/11 00:54:56 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 2    | 2014/04/11 00:54:56 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 00:54:56 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:55:00 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/11 00:55:00 | Error occurred during initialization of VM
+INFO   | jvm 3    | 2014/04/11 00:55:00 | Could not reserve enough space for object heap
+INFO   | jvm 3    | 2014/04/11 00:55:00 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 3    | 2014/04/11 00:55:00 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 00:55:00 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:55:04 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/11 00:55:05 | Error occurred during initialization of VM
+INFO   | jvm 4    | 2014/04/11 00:55:05 | Could not reserve enough space for object heap
+INFO   | jvm 4    | 2014/04/11 00:55:05 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 4    | 2014/04/11 00:55:05 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 00:55:05 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:55:09 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/11 00:55:09 | Error occurred during initialization of VM
+INFO   | jvm 5    | 2014/04/11 00:55:09 | Could not reserve enough space for object heap
+INFO   | jvm 5    | 2014/04/11 00:55:09 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 5    | 2014/04/11 00:55:09 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 00:55:09 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/11 00:55:09 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/11 00:55:09 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/11 00:55:09 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/11 00:55:43 | Starting the Mycat-server service...
+STATUS | wrapper  | 2014/04/11 00:55:43 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/11 00:55:43 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 00:55:44 | Error occurred during initialization of VM
+INFO   | jvm 1    | 2014/04/11 00:55:44 | Could not reserve enough space for object heap
+INFO   | jvm 1    | 2014/04/11 00:55:44 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 1    | 2014/04/11 00:55:44 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 00:55:44 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:55:48 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/11 00:55:48 | Error occurred during initialization of VM
+INFO   | jvm 2    | 2014/04/11 00:55:48 | Could not reserve enough space for object heap
+INFO   | jvm 2    | 2014/04/11 00:55:48 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 2    | 2014/04/11 00:55:48 | Error: A fatal exception has occurred. Program will exit.
+INFO   | wrapper  | 2014/04/11 00:55:48 | Waiting to start...
+ERROR  | wrapper  | 2014/04/11 00:55:48 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 00:55:52 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/11 00:55:52 | Error occurred during initialization of VM
+INFO   | jvm 3    | 2014/04/11 00:55:52 | Could not reserve enough space for object heap
+INFO   | jvm 3    | 2014/04/11 00:55:52 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 3    | 2014/04/11 00:55:52 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 00:55:52 | JVM exited while loading the application.
+INFO   | wrapper  | 2014/04/11 00:55:53 | Waiting to start...
+STATUS | wrapper  | 2014/04/11 00:55:57 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/11 00:55:57 | Error occurred during initialization of VM
+INFO   | jvm 4    | 2014/04/11 00:55:57 | Could not reserve enough space for object heap
+INFO   | jvm 4    | 2014/04/11 00:55:57 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 4    | 2014/04/11 00:55:57 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 00:55:57 | JVM exited while loading the application.
+INFO   | wrapper  | 2014/04/11 00:55:58 | Waiting to start...
+STATUS | wrapper  | 2014/04/11 00:56:01 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/11 00:56:01 | Error occurred during initialization of VM
+INFO   | jvm 5    | 2014/04/11 00:56:01 | Could not reserve enough space for object heap
+INFO   | jvm 5    | 2014/04/11 00:56:01 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 5    | 2014/04/11 00:56:01 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 00:56:01 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/11 00:56:01 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/11 00:56:01 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/11 00:56:01 | <-- Wrapper Stopped
+ERROR  | wrapper  | 2014/04/11 00:56:03 | The Mycat-server service was launched, but failed to start.
+STATUS | wrapper  | 2014/04/11 01:03:43 | Starting the Mycat-server service...
+STATUS | wrapper  | 2014/04/11 01:03:43 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/11 01:03:43 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 01:03:43 | Error occurred during initialization of VM
+INFO   | jvm 1    | 2014/04/11 01:03:43 | Could not reserve enough space for object heap
+INFO   | jvm 1    | 2014/04/11 01:03:43 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 1    | 2014/04/11 01:03:43 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 01:03:43 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/11 01:03:47 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/11 01:03:47 | Error occurred during initialization of VM
+INFO   | jvm 2    | 2014/04/11 01:03:47 | Could not reserve enough space for object heap
+INFO   | jvm 2    | 2014/04/11 01:03:47 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 2    | 2014/04/11 01:03:47 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 01:03:47 | JVM exited while loading the application.
+INFO   | wrapper  | 2014/04/11 01:03:48 | Waiting to start...
+STATUS | wrapper  | 2014/04/11 01:03:52 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/11 01:03:52 | Error occurred during initialization of VM
+INFO   | jvm 3    | 2014/04/11 01:03:52 | Could not reserve enough space for object heap
+INFO   | jvm 3    | 2014/04/11 01:03:52 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 3    | 2014/04/11 01:03:52 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 01:03:52 | JVM exited while loading the application.
+INFO   | wrapper  | 2014/04/11 01:03:53 | Waiting to start...
+STATUS | wrapper  | 2014/04/11 01:03:56 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/11 01:03:56 | Error occurred during initialization of VM
+INFO   | jvm 4    | 2014/04/11 01:03:56 | Could not reserve enough space for object heap
+INFO   | jvm 4    | 2014/04/11 01:03:56 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 4    | 2014/04/11 01:03:56 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 01:03:56 | JVM exited while loading the application.
+INFO   | wrapper  | 2014/04/11 01:03:58 | Waiting to start...
+STATUS | wrapper  | 2014/04/11 01:04:00 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/11 01:04:00 | Error occurred during initialization of VM
+INFO   | jvm 5    | 2014/04/11 01:04:00 | Could not reserve enough space for object heap
+INFO   | jvm 5    | 2014/04/11 01:04:00 | Error: Could not create the Java Virtual Machine.
+INFO   | jvm 5    | 2014/04/11 01:04:00 | Error: A fatal exception has occurred. Program will exit.
+ERROR  | wrapper  | 2014/04/11 01:04:00 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/11 01:04:01 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/11 01:04:01 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/11 01:04:01 | <-- Wrapper Stopped
+ERROR  | wrapper  | 2014/04/11 01:04:02 | The Mycat-server service was launched, but failed to start.
+STATUS | wrapper  | 2014/04/11 01:10:26 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/11 01:10:26 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 01:10:29 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 01:10:29 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 01:10:29 | 
+INFO   | jvm 1    | 2014/04/11 01:10:31 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 01:10:31 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 01:10:31 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 01:10:31 | log4j 2014-04-11 01:10:31 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 01:10:32 | MyCAT Server startup successfully. see logs in logs/mycat.log
+INFO   | jvm 1    | 2014/04/11 01:13:02 | Exception in thread "AIOExecutor1" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/11 01:13:02 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/04/11 01:13:02 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/04/11 01:13:02 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/04/11 01:13:02 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:13:02 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:13:02 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:13:02 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:13:02 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:13:02 | 	at java.lang.Thread.run(Unknown Source)
+STATUS | wrapper  | 2014/04/11 01:14:52 | CTRL-C trapped.  Shutting down.
+STATUS | wrapper  | 2014/04/11 01:14:53 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/11 01:14:59 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/11 01:15:00 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 01:15:00 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 01:15:00 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 01:15:00 | 
+INFO   | jvm 1    | 2014/04/11 01:15:00 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 01:15:00 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 01:15:00 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 01:15:01 | log4j 2014-04-11 01:15:01 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 01:15:01 | MyCAT Server startup successfully. see logs in logs/mycat.log
+INFO   | jvm 1    | 2014/04/11 01:18:11 | Exception in thread "AIOExecutor0" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/11 01:18:11 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/04/11 01:18:11 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/04/11 01:18:11 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/04/11 01:18:11 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:18:11 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:18:11 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:18:11 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:18:11 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:18:11 | 	at java.lang.Thread.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:21:11 | Exception in thread "AIOExecutor1" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/11 01:21:11 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/04/11 01:21:11 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/04/11 01:21:11 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/04/11 01:21:11 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:21:11 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:21:11 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:21:11 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:21:11 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 01:21:11 | 	at java.lang.Thread.run(Unknown Source)
+STATUS | wrapper  | 2014/04/11 01:22:58 | CTRL-C trapped.  Shutting down.
+STATUS | wrapper  | 2014/04/11 01:23:00 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/11 01:23:03 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/11 01:23:03 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 01:23:04 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 01:23:04 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 01:23:04 | 
+INFO   | jvm 1    | 2014/04/11 01:23:04 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 01:23:04 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 01:23:04 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 01:23:04 | log4j 2014-04-11 01:23:04 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 01:23:04 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/11 01:24:20 | CTRL-C trapped.  Shutting down.
+STATUS | wrapper  | 2014/04/11 01:24:21 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/11 01:24:40 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/11 01:24:41 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 01:24:41 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 01:24:41 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 01:24:41 | 
+INFO   | jvm 1    | 2014/04/11 01:24:41 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 01:24:41 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 01:24:41 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 01:24:41 | log4j 2014-04-11 01:24:41 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 01:24:42 | MyCAT Server startup successfully. see logs in logs/mycat.log
+INFO   | jvm 1    | 2014/04/11 02:40:58 | Exception in thread "AIOExecutor0" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at java.lang.Thread.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | Exception in thread "AIOExecutor1" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at java.lang.Thread.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | Exception in thread "AIOExecutor3" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:40:58 | 	at java.lang.Thread.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:41:11 | Exception in thread "AIOExecutor2" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/11 02:41:11 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/04/11 02:41:11 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/04/11 02:41:11 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/04/11 02:41:11 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:41:11 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:41:11 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:41:11 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:41:11 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:41:11 | 	at java.lang.Thread.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:49:23 | Exception in thread "AIOExecutor4" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/11 02:49:23 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/04/11 02:49:23 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/04/11 02:49:23 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/04/11 02:49:23 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:49:23 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:49:24 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:49:24 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:49:24 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/11 02:49:24 | 	at java.lang.Thread.run(Unknown Source)
+STATUS | wrapper  | 2014/04/11 02:58:19 | CTRL-C trapped.  Shutting down.
+STATUS | wrapper  | 2014/04/11 02:58:20 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/11 02:58:51 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/11 02:58:51 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 02:58:52 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 02:58:52 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 02:58:52 | 
+INFO   | jvm 1    | 2014/04/11 02:58:53 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 02:58:53 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 02:58:53 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 02:58:53 | log4j 2014-04-11 02:58:53 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 02:58:53 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/11 19:02:39 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/11 19:02:40 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 19:02:46 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 19:02:46 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 19:02:46 | 
+INFO   | jvm 1    | 2014/04/11 19:02:48 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 19:02:48 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 19:02:48 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 19:02:49 | log4j 2014-04-11 19:02:49 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 19:02:50 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/11 19:42:34 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/11 19:42:34 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 19:42:40 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 19:42:40 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 19:42:40 | 
+INFO   | jvm 1    | 2014/04/11 19:42:42 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 19:42:42 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 19:42:42 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 19:42:43 | log4j 2014-04-11 19:42:43 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 19:42:44 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/11 19:45:41 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/11 19:45:41 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 19:45:48 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 19:45:48 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 19:45:48 | 
+INFO   | jvm 1    | 2014/04/11 19:45:50 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 19:45:50 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 19:45:50 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+                                                                                                        STATUS | wrapper  | 2014/04/11 19:54:42 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/11 19:54:43 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 19:54:53 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 19:54:53 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 19:54:53 | 
+INFO   | jvm 1    | 2014/04/11 19:54:55 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 19:54:55 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 19:54:55 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 19:54:56 | log4j 2014-04-11 19:54:56 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 19:54:57 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/11 19:58:29 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/11 19:58:30 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 19:58:40 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 19:58:40 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 19:58:40 | 
+INFO   | jvm 1    | 2014/04/11 19:58:42 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 19:58:42 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 19:58:42 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 19:58:43 | log4j 2014-04-11 19:58:43 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 19:58:44 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/11 20:37:36 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/11 20:37:41 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/11 22:00:43 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/11 22:00:44 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/11 22:00:47 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/11 22:00:47 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/11 22:00:47 | 
+INFO   | jvm 1    | 2014/04/11 22:00:49 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/11 22:00:49 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/11 22:00:49 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/11 22:00:50 | log4j 2014-04-11 22:00:49 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/11 22:00:51 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/12 01:22:45 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/12 01:23:01 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/12 15:58:03 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/12 15:58:04 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 15:58:13 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/12 15:58:13 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/12 15:58:13 | 
+INFO   | jvm 1    | 2014/04/12 15:58:15 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/12 15:58:15 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/12 15:58:15 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/12 15:58:15 | log4j 2014-04-12 15:58:15 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/12 15:58:17 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/12 17:38:17 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/12 17:38:17 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 17:38:23 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 1    | 2014/04/12 17:38:23 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:38:24 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:38:28 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/12 17:38:29 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 2    | 2014/04/12 17:38:29 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:38:29 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:38:34 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/12 17:38:35 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 3    | 2014/04/12 17:38:35 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:38:35 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:38:40 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/12 17:38:40 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 4    | 2014/04/12 17:38:40 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:38:40 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:38:45 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/12 17:38:46 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 5    | 2014/04/12 17:38:46 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:38:46 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/12 17:38:46 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/12 17:38:46 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/12 17:38:46 | <-- Wrapper Stopped
+ERROR  | wrapper  | 2014/04/12 17:42:18 | JVM exited unexpectedly.
+STATUS | wrapper  | 2014/04/12 17:42:22 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/12 17:42:23 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 2    | 2014/04/12 17:42:23 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 2    | 2014/04/12 17:42:23 | 
+INFO   | jvm 2    | 2014/04/12 17:42:25 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 2    | 2014/04/12 17:42:25 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 2    | 2014/04/12 17:42:25 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 2    | 2014/04/12 17:42:25 | log4j 2014-04-12 17:42:25 [./conf/log4j.xml] load completed.
+INFO   | jvm 2    | 2014/04/12 17:42:26 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/12 17:42:39 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/12 17:42:40 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 17:42:40 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 1    | 2014/04/12 17:42:40 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:42:40 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:42:45 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/12 17:42:45 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 2    | 2014/04/12 17:42:45 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:42:45 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:42:50 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/12 17:42:50 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 3    | 2014/04/12 17:42:50 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:42:50 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:42:55 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/12 17:42:55 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 4    | 2014/04/12 17:42:55 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:42:55 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:42:59 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/12 17:43:00 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 5    | 2014/04/12 17:43:00 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:43:00 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/12 17:43:00 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/12 17:43:00 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/12 17:43:00 | <-- Wrapper Stopped
+ERROR  | wrapper  | 2014/04/12 17:43:40 | JVM exited unexpectedly.
+STATUS | wrapper  | 2014/04/12 17:43:44 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/12 17:43:45 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 3    | 2014/04/12 17:43:45 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 3    | 2014/04/12 17:43:45 | 
+INFO   | jvm 3    | 2014/04/12 17:43:45 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 3    | 2014/04/12 17:43:45 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 3    | 2014/04/12 17:43:45 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 3    | 2014/04/12 17:43:45 | log4j 2014-04-12 17:43:45 [./conf/log4j.xml] load completed.
+INFO   | jvm 3    | 2014/04/12 17:43:47 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/12 17:44:30 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/12 17:44:30 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 17:44:31 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 1    | 2014/04/12 17:44:31 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:44:31 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:44:35 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/12 17:44:36 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 2    | 2014/04/12 17:44:36 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:44:36 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:44:40 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/12 17:44:41 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 3    | 2014/04/12 17:44:41 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:44:41 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:44:45 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/12 17:44:46 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 4    | 2014/04/12 17:44:46 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:44:46 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 17:44:50 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/12 17:44:50 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 5    | 2014/04/12 17:44:50 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 17:44:51 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/12 17:44:51 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/12 17:44:51 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/12 17:44:51 | <-- Wrapper Stopped
+ERROR  | wrapper  | 2014/04/12 17:45:07 | JVM exited unexpectedly.
+STATUS | wrapper  | 2014/04/12 17:45:11 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/12 17:45:12 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 4    | 2014/04/12 17:45:12 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 4    | 2014/04/12 17:45:12 | 
+INFO   | jvm 4    | 2014/04/12 17:45:12 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 4    | 2014/04/12 17:45:12 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 4    | 2014/04/12 17:45:12 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 4    | 2014/04/12 17:45:12 | log4j 2014-04-12 17:45:12 [./conf/log4j.xml] load completed.
+INFO   | jvm 4    | 2014/04/12 17:45:13 | MyCAT Server startup successfully. see logs in logs/mycat.log
+ERROR  | wrapper  | 2014/04/12 17:45:21 | JVM exited unexpectedly.
+STATUS | wrapper  | 2014/04/12 17:45:25 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/12 17:45:25 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 5    | 2014/04/12 17:45:25 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 5    | 2014/04/12 17:45:25 | 
+INFO   | jvm 5    | 2014/04/12 17:45:26 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 5    | 2014/04/12 17:45:26 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 5    | 2014/04/12 17:45:26 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 5    | 2014/04/12 17:45:26 | log4j 2014-04-12 17:45:26 [./conf/log4j.xml] load completed.
+INFO   | jvm 5    | 2014/04/12 17:45:27 | MyCAT Server startup successfully. see logs in logs/mycat.log
+ERROR  | wrapper  | 2014/04/12 17:46:17 | JVM exited unexpectedly.
+STATUS | wrapper  | 2014/04/12 17:46:21 | Launching a JVM...
+INFO   | jvm 6    | 2014/04/12 17:46:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 6    | 2014/04/12 17:46:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 6    | 2014/04/12 17:46:22 | 
+INFO   | jvm 6    | 2014/04/12 17:46:22 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 6    | 2014/04/12 17:46:22 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 6    | 2014/04/12 17:46:22 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 6    | 2014/04/12 17:46:22 | log4j 2014-04-12 17:46:22 [./conf/log4j.xml] load completed.
+INFO   | jvm 6    | 2014/04/12 17:46:24 | MyCAT Server startup successfully. see logs in logs/mycat.log
+ERROR  | wrapper  | 2014/04/12 17:48:26 | The Mycat-server service is already running with status: RUNNING
+STATUS | wrapper  | 2014/04/12 18:50:16 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/12 18:50:17 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 18:50:20 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 1    | 2014/04/12 18:50:20 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 18:50:21 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 18:50:25 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/12 18:50:26 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 2    | 2014/04/12 18:50:26 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 18:50:26 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 18:50:31 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/12 18:50:31 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 3    | 2014/04/12 18:50:31 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 18:50:32 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 18:50:36 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/12 18:50:37 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 4    | 2014/04/12 18:50:37 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 18:50:37 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 18:50:42 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/12 18:50:42 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 5    | 2014/04/12 18:50:42 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 18:50:43 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/12 18:50:43 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/12 18:50:43 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/12 18:50:43 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/12 19:03:09 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/12 19:03:09 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 19:03:10 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 1    | 2014/04/12 19:03:10 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 19:03:10 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 19:03:15 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/12 19:03:15 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 2    | 2014/04/12 19:03:15 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 19:03:16 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 19:03:20 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/12 19:03:21 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 3    | 2014/04/12 19:03:21 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 19:03:21 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 19:03:26 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/12 19:03:26 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 4    | 2014/04/12 19:03:26 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 19:03:27 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 19:03:31 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/12 19:03:32 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 5    | 2014/04/12 19:03:32 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 19:03:32 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/12 19:03:33 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/12 19:03:33 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/12 19:03:33 | <-- Wrapper Stopped
+ERROR  | wrapper  | 2014/04/12 19:03:49 | The Mycat-server service is already running with status: RUNNING
+INFO   | jvm 6    | 2014/04/12 19:38:37 | Exception in thread "AIOExecutor1" java.lang.NullPointerException
+INFO   | jvm 6    | 2014/04/12 19:38:37 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 6    | 2014/04/12 19:38:37 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 6    | 2014/04/12 19:38:37 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 6    | 2014/04/12 19:38:37 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 6    | 2014/04/12 19:38:37 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 6    | 2014/04/12 19:38:37 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 6    | 2014/04/12 19:38:37 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 6    | 2014/04/12 19:38:37 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 6    | 2014/04/12 19:38:37 | 	at java.lang.Thread.run(Unknown Source)
+STATUS | wrapper  | 2014/04/12 20:53:36 | Stopping the Mycat-server service...
+STATUS | wrapper  | 2014/04/12 20:53:39 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/12 20:53:40 | Mycat-server stopped.
+STATUS | wrapper  | 2014/04/12 20:54:18 | Starting the Mycat-server service...
+STATUS | wrapper  | 2014/04/12 20:54:18 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/12 20:54:18 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 20:54:19 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/12 20:54:19 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/12 20:54:19 | 
+INFO   | jvm 1    | 2014/04/12 20:54:20 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/12 20:54:20 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/12 20:54:20 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/12 20:54:20 | log4j 2014-04-12 20:54:20 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/12 20:54:21 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/12 20:54:23 | Mycat-server started.
+STATUS | wrapper  | 2014/04/12 21:25:11 | Stopping the Mycat-server service...
+STATUS | wrapper  | 2014/04/12 21:25:12 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/12 21:25:14 | Mycat-server stopped.
+STATUS | wrapper  | 2014/04/12 21:25:14 | Starting the Mycat-server service...
+STATUS | wrapper  | 2014/04/12 21:25:14 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/12 21:25:14 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 21:25:15 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/12 21:25:15 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/12 21:25:15 | 
+INFO   | jvm 1    | 2014/04/12 21:25:15 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/12 21:25:15 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/12 21:25:15 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/12 21:25:15 | log4j 2014-04-12 21:25:15 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/12 21:25:16 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/12 21:25:18 | Mycat-server started.
+STATUS | wrapper  | 2014/04/12 22:07:54 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/12 22:07:58 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/12 23:06:19 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/12 23:06:20 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 23:06:24 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/12 23:06:24 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/12 23:06:24 | 
+INFO   | jvm 1    | 2014/04/12 23:06:25 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/12 23:06:25 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/12 23:06:25 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/12 23:06:26 | log4j 2014-04-12 23:06:26 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/12 23:06:27 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/12 23:12:03 | --> Wrapper Started as Console
+STATUS | wrapper  | 2014/04/12 23:12:03 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/12 23:12:04 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 1    | 2014/04/12 23:12:04 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 23:12:04 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 23:12:08 | Launching a JVM...
+INFO   | jvm 2    | 2014/04/12 23:12:09 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 2    | 2014/04/12 23:12:09 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 23:12:09 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 23:12:13 | Launching a JVM...
+INFO   | jvm 3    | 2014/04/12 23:12:14 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 3    | 2014/04/12 23:12:14 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 23:12:14 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 23:12:18 | Launching a JVM...
+INFO   | jvm 4    | 2014/04/12 23:12:19 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 4    | 2014/04/12 23:12:19 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 23:12:19 | JVM exited while loading the application.
+STATUS | wrapper  | 2014/04/12 23:12:23 | Launching a JVM...
+INFO   | jvm 5    | 2014/04/12 23:12:24 | Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1984; nested exception is: 
+INFO   | jvm 5    | 2014/04/12 23:12:24 | 	java.net.BindException: Address already in use: JVM_Bind
+ERROR  | wrapper  | 2014/04/12 23:12:24 | JVM exited while loading the application.
+FATAL  | wrapper  | 2014/04/12 23:12:24 | There were 5 failed launches in a row, each lasting less than 300 seconds.  Giving up.
+FATAL  | wrapper  | 2014/04/12 23:12:24 |   There may be a configuration problem: please check the logs.
+STATUS | wrapper  | 2014/04/12 23:12:24 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/12 23:46:05 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/12 23:46:10 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/13 10:45:33 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/13 10:45:33 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/13 10:45:43 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/13 10:45:43 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/13 10:45:43 | 
+INFO   | jvm 1    | 2014/04/13 10:45:46 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/13 10:45:46 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/13 10:45:46 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/13 10:45:47 | log4j 2014-04-13 10:45:47 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/13 10:45:48 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/13 13:00:38 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/13 13:00:44 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/13 14:12:14 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/13 14:12:14 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/13 14:12:26 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/13 14:12:26 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/13 14:12:26 | 
+INFO   | jvm 1    | 2014/04/13 14:12:28 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/13 14:12:28 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/13 14:12:28 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/13 14:12:29 | log4j 2014-04-13 14:12:29 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/13 14:12:30 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/13 21:48:18 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/13 21:48:34 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/13 23:12:48 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/13 23:12:48 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/13 23:12:56 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/13 23:12:56 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/13 23:12:56 | 
+INFO   | jvm 1    | 2014/04/13 23:12:57 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/13 23:12:57 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/13 23:12:57 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/13 23:12:58 | log4j 2014-04-13 23:12:58 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/13 23:12:59 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/14 00:50:32 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/14 00:50:35 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/14 18:42:59 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/14 18:43:00 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/14 18:43:07 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/14 18:43:07 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/14 18:43:07 | 
+INFO   | jvm 1    | 2014/04/14 18:43:10 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/14 18:43:10 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/14 18:43:10 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/14 18:43:11 | log4j 2014-04-14 18:43:11 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/14 18:43:12 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/14 21:53:51 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/14 21:54:00 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/14 22:36:35 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/14 22:36:35 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/14 22:36:41 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/14 22:36:41 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/14 22:36:41 | 
+INFO   | jvm 1    | 2014/04/14 22:36:43 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/14 22:36:43 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/14 22:36:43 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/14 22:36:43 | log4j 2014-04-14 22:36:43 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/14 22:36:44 | MyCAT Server startup successfully. see logs in logs/mycat.log
+ERROR  | wrapper  | 2014/04/14 22:54:57 | The Mycat-server service is already running with status: RUNNING
+STATUS | wrapper  | 2014/04/15 01:46:48 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/15 01:46:56 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/15 08:01:19 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/15 08:01:19 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/15 08:01:26 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/15 08:01:26 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/15 08:01:26 | 
+INFO   | jvm 1    | 2014/04/15 08:01:28 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/15 08:01:28 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/15 08:01:28 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/15 08:01:30 | log4j 2014-04-15 08:01:30 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/15 08:01:31 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/15 21:38:04 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/15 21:38:06 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/15 21:39:16 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/15 21:39:16 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/15 21:39:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/15 21:39:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/15 21:39:22 | 
+INFO   | jvm 1    | 2014/04/15 21:39:24 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/15 21:39:24 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/15 21:39:24 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/15 21:39:25 | log4j 2014-04-15 21:39:25 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/15 21:39:27 | MyCAT Server startup successfully. see logs in logs/mycat.log
