@@ -36,7 +36,10 @@ public class Logined extends Controller {
             return renderArgs.get("user", User.class);
         }
         String username = session.get("user");
-        if(username != null) {
+    //    if(username != null) {
+    //       return User.find("select username,password,email,isAdmin,integration,registerDate from user where username = ", username);
+    //    } 
+	    if(username != null) {
             return User.find("byUsername", username).first();
         } 
         return null;

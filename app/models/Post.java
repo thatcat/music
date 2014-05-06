@@ -43,5 +43,30 @@ public class Post extends Model {
     public String toString() {
         return content;
     }
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     
 }

@@ -4,6 +4,8 @@ import play.mvc.*;
 import play.data.validation.*;
 import java.util.*;
 import models.*;
+import javax.persistence.*;
+import play.db.*;
 
 public class Application extends Controller {
 
@@ -13,6 +15,8 @@ public class Application extends Controller {
             //转跳到管理员页面
         		Logined.music_cms();
         }
+	//	Query query = JPA.em().createQuery("select id,content,postedAt,author_id from post order by id desc");
+	//	List<Post> postList = query.getResultList();
 		List<Post> postList = Post.find("order by id desc").from(0).fetch(3);
 		List<Music> guoYuList=Music.find("byTypeOrderByPlayCount",1).from(0).fetch(15);
 		List<Music> yueYuList=Music.find("byTypeOrderByPlayCount",2).from(0).fetch(15);

@@ -677,3 +677,356 @@ INFO   | jvm 1    | 2014/04/15 21:39:24 | SLF4J: Defaulting to no-operation (NOP
 INFO   | jvm 1    | 2014/04/15 21:39:24 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 INFO   | jvm 1    | 2014/04/15 21:39:25 | log4j 2014-04-15 21:39:25 [./conf/log4j.xml] load completed.
 INFO   | jvm 1    | 2014/04/15 21:39:27 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/16 00:21:45 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/16 00:21:51 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/16 20:32:28 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/16 20:32:28 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/16 20:32:41 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/16 20:32:41 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/16 20:32:41 | 
+INFO   | jvm 1    | 2014/04/16 20:32:43 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/16 20:32:43 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/16 20:32:43 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/16 20:32:44 | log4j 2014-04-16 20:32:43 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/16 20:32:45 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/16 21:35:32 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/16 21:35:40 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/16 22:30:27 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/16 22:30:27 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/16 22:30:29 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/16 22:30:29 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/16 22:30:29 | 
+INFO   | jvm 1    | 2014/04/16 22:30:30 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/16 22:30:30 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/16 22:30:30 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/16 22:30:30 | log4j 2014-04-16 22:30:30 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/16 22:30:32 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/17 00:03:14 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/17 00:03:17 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/17 20:58:10 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/17 20:58:10 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/17 20:58:16 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/17 20:58:16 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/17 20:58:16 | 
+INFO   | jvm 1    | 2014/04/17 20:58:19 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/17 20:58:19 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/17 20:58:19 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/17 20:58:19 | log4j 2014-04-17 20:58:19 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/17 20:58:20 | MyCAT Server startup successfully. see logs in logs/mycat.log
+INFO   | jvm 1    | 2014/04/17 21:21:58 | Exception in thread "AIOExecutor1" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/17 21:21:58 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/04/17 21:21:58 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/04/17 21:21:58 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/04/17 21:21:58 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/17 21:21:58 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/17 21:21:58 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/17 21:21:58 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/17 21:21:58 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/17 21:21:58 | 	at java.lang.Thread.run(Unknown Source)
+STATUS | wrapper  | 2014/04/17 22:09:13 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/17 22:09:19 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/17 22:54:57 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/17 22:54:58 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/17 22:54:59 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/17 22:54:59 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/17 22:54:59 | 
+INFO   | jvm 1    | 2014/04/17 22:55:00 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/17 22:55:00 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/17 22:55:00 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/17 22:55:01 | log4j 2014-04-17 22:55:01 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/17 22:55:02 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/18 00:12:44 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/18 00:13:01 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/18 22:22:59 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/18 22:23:00 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/18 22:23:02 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/18 22:23:02 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/18 22:23:02 | 
+INFO   | jvm 1    | 2014/04/18 22:23:04 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/18 22:23:04 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/18 22:23:04 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/18 22:23:05 | log4j 2014-04-18 22:23:05 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/18 22:23:06 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/19 01:54:11 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/19 01:54:14 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/19 11:29:14 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/19 11:29:15 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/19 11:29:17 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/19 11:29:17 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/19 11:29:17 | 
+INFO   | jvm 1    | 2014/04/19 11:29:18 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/19 11:29:18 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/19 11:29:18 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/19 11:29:19 | log4j 2014-04-19 11:29:19 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/19 11:29:20 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/19 12:02:26 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/19 12:02:41 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/19 18:19:18 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/19 18:19:18 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/19 18:19:23 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/19 18:19:23 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/19 18:19:23 | 
+INFO   | jvm 1    | 2014/04/19 18:19:24 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/19 18:19:24 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/19 18:19:24 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/19 18:19:25 | log4j 2014-04-19 18:19:25 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/19 18:19:26 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/19 22:56:00 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/19 22:56:07 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/19 23:48:23 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/19 23:48:23 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/19 23:48:30 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/19 23:48:30 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/19 23:48:30 | 
+INFO   | jvm 1    | 2014/04/19 23:48:32 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/19 23:48:32 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/19 23:48:32 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/19 23:48:32 | log4j 2014-04-19 23:48:32 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/19 23:48:34 | MyCAT Server startup successfully. see logs in logs/mycat.log
+INFO   | jvm 1    | 2014/04/20 00:53:34 | Exception in thread "AIOExecutor0" 
+INFO   | jvm 1    | 2014/04/20 00:53:34 | java.lang.NullPointerException
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at org.opencloudb.buffer.BufferPool.recycleBuffer(BufferPool.java:133)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at org.opencloudb.buffer.BufferPool.recycle(BufferPool.java:125)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at org.opencloudb.net.AbstractConnection.recycle(AbstractConnection.java:164)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at org.opencloudb.net.AbstractConnection.cleanup(AbstractConnection.java:383)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at org.opencloudb.net.AbstractConnection.close(AbstractConnection.java:360)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at org.opencloudb.mysql.nio.MySQLConnection.close(MySQLConnection.java:565)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at org.opencloudb.net.AIOReadHandler.failed(AbstractConnection.java:513)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at org.opencloudb.net.AIOReadHandler.failed(AbstractConnection.java:494)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/04/20 00:53:34 | 	at java.lang.Thread.run(Unknown Source)
+STATUS | wrapper  | 2014/04/20 03:09:48 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/20 03:09:57 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/20 13:56:48 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/20 13:56:49 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/20 13:56:50 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/20 13:56:50 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/20 13:56:50 | 
+INFO   | jvm 1    | 2014/04/20 13:56:53 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/20 13:56:53 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/20 13:56:53 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/20 13:56:54 | log4j 2014-04-20 13:56:54 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/20 13:56:56 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/20 15:08:12 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/20 15:08:16 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/20 18:09:00 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/20 18:09:03 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/20 18:09:16 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/20 18:09:16 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/20 18:09:16 | 
+INFO   | jvm 1    | 2014/04/20 18:09:17 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/20 18:09:17 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/20 18:09:17 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/20 18:09:18 | log4j 2014-04-20 18:09:18 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/20 18:09:19 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/21 01:38:27 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/21 01:38:43 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/21 18:28:17 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/21 18:28:18 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/21 18:28:23 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/21 18:28:23 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/21 18:28:23 | 
+INFO   | jvm 1    | 2014/04/21 18:28:25 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/21 18:28:25 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/21 18:28:25 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/21 18:28:25 | log4j 2014-04-21 18:28:25 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/21 18:28:26 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/21 22:23:32 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/21 22:23:41 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/21 23:18:34 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/21 23:18:34 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/21 23:18:36 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/21 23:18:36 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/21 23:18:36 | 
+INFO   | jvm 1    | 2014/04/21 23:18:37 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/21 23:18:37 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/21 23:18:37 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/21 23:18:38 | log4j 2014-04-21 23:18:38 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/21 23:18:39 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/22 00:25:25 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/22 00:25:29 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/24 23:51:46 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/24 23:51:47 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/24 23:51:48 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/24 23:51:48 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/24 23:51:48 | 
+INFO   | jvm 1    | 2014/04/24 23:51:50 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/24 23:51:50 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/24 23:51:50 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/24 23:51:50 | log4j 2014-04-24 23:51:50 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/24 23:51:52 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/25 00:11:29 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/25 00:11:36 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/25 20:57:36 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/25 20:57:36 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/25 20:57:38 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/25 20:57:38 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/25 20:57:38 | 
+INFO   | jvm 1    | 2014/04/25 20:57:39 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/25 20:57:39 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/25 20:57:39 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/25 20:57:40 | log4j 2014-04-25 20:57:40 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/25 20:57:41 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/26 01:33:10 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/26 01:33:26 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/26 11:28:18 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/26 11:28:18 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/26 11:28:23 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/26 11:28:23 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/26 11:28:23 | 
+INFO   | jvm 1    | 2014/04/26 11:28:24 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/26 11:28:24 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/26 11:28:24 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/26 11:28:24 | log4j 2014-04-26 11:28:24 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/26 11:28:26 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/26 15:00:29 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/26 15:00:49 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/26 17:24:48 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/26 17:24:49 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/26 17:24:50 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/26 17:24:50 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/26 17:24:50 | 
+INFO   | jvm 1    | 2014/04/26 17:24:50 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/26 17:24:50 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/26 17:24:50 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/26 17:24:51 | log4j 2014-04-26 17:24:51 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/26 17:24:52 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/26 18:31:59 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/26 18:32:15 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/26 20:12:20 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/26 20:12:20 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/26 20:12:21 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/26 20:12:21 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/26 20:12:21 | 
+INFO   | jvm 1    | 2014/04/26 20:12:24 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/26 20:12:24 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/26 20:12:24 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/26 20:12:25 | log4j 2014-04-26 20:12:25 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/26 20:12:27 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/27 00:28:39 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/27 00:28:47 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/27 11:02:16 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/27 11:02:17 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/27 11:02:18 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/27 11:02:18 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/27 11:02:18 | 
+INFO   | jvm 1    | 2014/04/27 11:02:19 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/27 11:02:19 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/27 11:02:19 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/27 11:02:20 | log4j 2014-04-27 11:02:20 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/27 11:02:21 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/27 13:23:02 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/27 13:23:14 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/27 22:42:32 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/27 22:42:33 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/27 22:42:38 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/27 22:42:38 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/27 22:42:38 | 
+INFO   | jvm 1    | 2014/04/27 22:42:39 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/27 22:42:39 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/27 22:42:39 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/27 22:42:39 | log4j 2014-04-27 22:42:39 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/27 22:42:40 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/28 00:12:11 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/28 00:12:14 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/28 22:10:03 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/28 22:10:03 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/28 22:10:04 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/28 22:10:04 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/28 22:10:04 | 
+INFO   | jvm 1    | 2014/04/28 22:10:05 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/28 22:10:05 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/28 22:10:05 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/28 22:10:05 | log4j 2014-04-28 22:10:05 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/28 22:10:06 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/29 00:57:02 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/29 00:57:19 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/29 20:24:55 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/29 20:24:56 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/29 20:24:57 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/29 20:24:57 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/29 20:24:57 | 
+INFO   | jvm 1    | 2014/04/29 20:24:58 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/29 20:24:58 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/29 20:24:58 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/29 20:24:58 | log4j 2014-04-29 20:24:58 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/29 20:25:00 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/04/29 23:53:19 | Machine is shutting down.
+STATUS | wrapper  | 2014/04/29 23:53:26 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/04/30 19:44:34 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/04/30 19:44:35 | Launching a JVM...
+INFO   | jvm 1    | 2014/04/30 19:44:36 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/04/30 19:44:36 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/04/30 19:44:36 | 
+INFO   | jvm 1    | 2014/04/30 19:44:37 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/04/30 19:44:37 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/04/30 19:44:37 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/04/30 19:44:37 | log4j 2014-04-30 19:44:37 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/04/30 19:44:39 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/05/01 00:51:01 | Machine is shutting down.
+STATUS | wrapper  | 2014/05/01 00:51:17 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/05/01 07:10:34 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/05/01 07:10:35 | Launching a JVM...
+INFO   | jvm 1    | 2014/05/01 07:10:36 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/05/01 07:10:36 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/05/01 07:10:36 | 
+INFO   | jvm 1    | 2014/05/01 07:10:37 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/05/01 07:10:37 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/05/01 07:10:37 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/05/01 07:10:38 | log4j 2014-05-01 07:10:38 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/05/01 07:10:39 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/05/01 07:41:48 | Machine is shutting down.
+STATUS | wrapper  | 2014/05/01 07:41:50 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/05/03 22:37:55 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/05/03 22:37:55 | Launching a JVM...
+INFO   | jvm 1    | 2014/05/03 22:37:56 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/05/03 22:37:56 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/05/03 22:37:56 | 
+INFO   | jvm 1    | 2014/05/03 22:37:59 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/05/03 22:37:59 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/05/03 22:37:59 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/05/03 22:38:00 | log4j 2014-05-03 22:38:00 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/05/03 22:38:01 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/05/04 00:23:35 | Machine is shutting down.
+STATUS | wrapper  | 2014/05/04 00:23:46 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/05/04 20:14:30 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/05/04 20:14:31 | Launching a JVM...
+INFO   | jvm 1    | 2014/05/04 20:14:37 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/05/04 20:14:37 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/05/04 20:14:37 | 
+INFO   | jvm 1    | 2014/05/04 20:14:39 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/05/04 20:14:39 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/05/04 20:14:39 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/05/04 20:14:40 | log4j 2014-05-04 20:14:40 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/05/04 20:14:41 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/05/05 00:08:31 | Machine is shutting down.
+STATUS | wrapper  | 2014/05/05 00:08:45 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/05/05 19:30:54 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/05/05 19:30:54 | Launching a JVM...
+INFO   | jvm 1    | 2014/05/05 19:30:55 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/05/05 19:30:55 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/05/05 19:30:55 | 
+INFO   | jvm 1    | 2014/05/05 19:30:56 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/05/05 19:30:56 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/05/05 19:30:56 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/05/05 19:30:57 | log4j 2014-05-05 19:30:57 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/05/05 19:30:58 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/05/06 00:06:01 | Machine is shutting down.
+ERROR  | wrapper  | 2014/05/06 00:06:22 | Shutdown failed: Timed out waiting for the JVM to terminate.
+ERROR  | wrapper  | 2014/05/06 00:06:22 | JVM did not exit on request.
+ERROR  | wrapper  | 2014/05/06 00:06:22 |   Attempt to terminate process failed: ¾Ü¾ø·ÃÎÊ¡£ (0x5)
+STATUS | wrapper  | 2014/05/06 00:06:23 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/05/06 09:58:08 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/05/06 09:58:09 | Launching a JVM...
+INFO   | jvm 1    | 2014/05/06 09:58:16 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/05/06 09:58:16 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/05/06 09:58:16 | 
+INFO   | jvm 1    | 2014/05/06 09:58:17 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/05/06 09:58:17 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/05/06 09:58:17 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/05/06 09:58:18 | log4j 2014-05-06 09:58:18 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/05/06 09:58:19 | MyCAT Server startup successfully. see logs in logs/mycat.log
