@@ -18,9 +18,10 @@ public class Application extends Controller {
 	//	Query query = JPA.em().createQuery("select id,content,postedAt,author_id from post order by id desc");
 	//	List<Post> postList = query.getResultList();
 	//	String sql = "select id,content,postedAt,author_id from post order by id desc";
-		String sql = "select * from `author`";
-		Query query = Model.em().createNativeQuery(sql,Author.class);
-		List<Author> postList = query.getResultList();
+		String sql = "select * from post order by id desc";
+	//	String sql = "select authorName,password,email, isAdmin,registerDate from `author`";
+		Query query = Model.em().createNativeQuery(sql,Post.class);
+		List<Post> postList = query.getResultList();
 		
 	//	List<Post> postList = Post.find("order by id desc").from(0).fetch(3);
 		List<Music> guoYuList=Music.find("byTypeOrderByPlayCount",1).from(0).fetch(15);
@@ -29,7 +30,7 @@ public class Application extends Controller {
 		List<Music> hanWenList=Music.find("byTypeOrderByPlayCount",4).from(0).fetch(15);
 
 
-    //   render(author,postList,yueYuList,guoYuList,yingWenList,hanWenList);
+       render(author,postList,yueYuList,guoYuList,yingWenList,hanWenList);
 		render();
     }
 
@@ -129,7 +130,7 @@ public class Application extends Controller {
             //跳转到登录画面
             Application.login();
         }		   
-		System.out.println("test-------------------------");
+		
 		Author author=null;
         String authorName = session.get("author");  
 		 if(authorName != null) {

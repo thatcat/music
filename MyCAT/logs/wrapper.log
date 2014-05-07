@@ -1030,3 +1030,71 @@ INFO   | jvm 1    | 2014/05/06 09:58:17 | SLF4J: Defaulting to no-operation (NOP
 INFO   | jvm 1    | 2014/05/06 09:58:17 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 INFO   | jvm 1    | 2014/05/06 09:58:18 | log4j 2014-05-06 09:58:18 [./conf/log4j.xml] load completed.
 INFO   | jvm 1    | 2014/05/06 09:58:19 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/05/06 13:32:55 | Machine is shutting down.
+STATUS | wrapper  | 2014/05/06 13:32:59 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/05/06 18:29:49 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/05/06 18:29:49 | Launching a JVM...
+INFO   | jvm 1    | 2014/05/06 18:29:50 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/05/06 18:29:50 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/05/06 18:29:50 | 
+INFO   | jvm 1    | 2014/05/06 18:29:51 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/05/06 18:29:51 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/05/06 18:29:51 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/05/06 18:29:51 | log4j 2014-05-06 18:29:51 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/05/06 18:29:52 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/05/06 20:59:45 | Machine is shutting down.
+STATUS | wrapper  | 2014/05/06 20:59:53 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/05/06 21:39:24 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/05/06 21:39:25 | Launching a JVM...
+INFO   | jvm 1    | 2014/05/06 21:39:27 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/05/06 21:39:27 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/05/06 21:39:27 | 
+INFO   | jvm 1    | 2014/05/06 21:39:28 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/05/06 21:39:28 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/05/06 21:39:28 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/05/06 21:39:28 | log4j 2014-05-06 21:39:28 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/05/06 21:39:29 | MyCAT Server startup successfully. see logs in logs/mycat.log
+STATUS | wrapper  | 2014/05/07 00:26:13 | Machine is shutting down.
+STATUS | wrapper  | 2014/05/07 00:26:19 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/05/07 18:38:06 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/05/07 18:38:06 | Launching a JVM...
+INFO   | jvm 1    | 2014/05/07 18:38:07 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/05/07 18:38:07 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/05/07 18:38:07 | 
+INFO   | jvm 1    | 2014/05/07 18:38:07 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/05/07 18:38:07 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/05/07 18:38:07 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/05/07 18:38:08 | log4j 2014-05-07 18:38:08 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/05/07 18:38:09 | MyCAT Server startup successfully. see logs in logs/mycat.log
+INFO   | jvm 1    | 2014/05/07 21:42:30 | Exception in thread "AIOExecutor1" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/05/07 21:42:30 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/05/07 21:42:30 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/05/07 21:42:30 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/05/07 21:42:30 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/05/07 21:42:30 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/05/07 21:42:30 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/05/07 21:42:30 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/05/07 21:42:30 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/05/07 21:42:30 | 	at java.lang.Thread.run(Unknown Source)
+STATUS | wrapper  | 2014/05/07 22:31:24 | Machine is shutting down.
+STATUS | wrapper  | 2014/05/07 22:31:39 | <-- Wrapper Stopped
+STATUS | wrapper  | 2014/05/07 23:05:07 | --> Wrapper Started as Service
+STATUS | wrapper  | 2014/05/07 23:05:08 | Launching a JVM...
+INFO   | jvm 1    | 2014/05/07 23:05:09 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2014/05/07 23:05:09 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2014/05/07 23:05:09 | 
+INFO   | jvm 1    | 2014/05/07 23:05:10 | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+INFO   | jvm 1    | 2014/05/07 23:05:10 | SLF4J: Defaulting to no-operation (NOP) logger implementation
+INFO   | jvm 1    | 2014/05/07 23:05:10 | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO   | jvm 1    | 2014/05/07 23:05:10 | log4j 2014-05-07 23:05:10 [./conf/log4j.xml] load completed.
+INFO   | jvm 1    | 2014/05/07 23:05:11 | MyCAT Server startup successfully. see logs in logs/mycat.log
+INFO   | jvm 1    | 2014/05/08 00:58:16 | Exception in thread "AIOExecutor1" java.lang.NullPointerException
+INFO   | jvm 1    | 2014/05/08 00:58:16 | 	at org.opencloudb.net.AbstractConnection.onWriteFinished(AbstractConnection.java:441)
+INFO   | jvm 1    | 2014/05/08 00:58:16 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:481)
+INFO   | jvm 1    | 2014/05/08 00:58:16 | 	at org.opencloudb.net.AIOWriteHandler.completed(AbstractConnection.java:476)
+INFO   | jvm 1    | 2014/05/08 00:58:16 | 	at sun.nio.ch.Invoker.invokeUnchecked(Unknown Source)
+INFO   | jvm 1    | 2014/05/08 00:58:16 | 	at sun.nio.ch.Invoker$2.run(Unknown Source)
+INFO   | jvm 1    | 2014/05/08 00:58:16 | 	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(Unknown Source)
+INFO   | jvm 1    | 2014/05/08 00:58:16 | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 1    | 2014/05/08 00:58:16 | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 1    | 2014/05/08 00:58:16 | 	at java.lang.Thread.run(Unknown Source)

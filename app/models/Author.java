@@ -31,7 +31,7 @@ public class Author extends Model {
 	@As("yyyy-MM-dd HH:mm:ss")
 	public Date registerDate; //注册日期
 
-	@OneToMany(mappedBy="Author", cascade=CascadeType.ALL)
+	@OneToMany(mappedBy="author", cascade=CascadeType.ALL)
     public List<MusicComment> musicComments;
    
     public Author() {
