@@ -23,24 +23,24 @@ public class Logined extends Controller {
 
 
     @Before
-    static void addUser() {
-        User user = connected();
-        if(user != null) {
-            renderArgs.put("user", user);
+    static void addAuthor() {
+        Author author = connected();
+        if(author != null) {
+            renderArgs.put("author", author);
         }
     }
 
-    static User connected() {
+    static Author connected() {
 		System.out.println("test-------------------------4");
-        if(renderArgs.get("user") != null) {
-            return renderArgs.get("user", User.class);
+        if(renderArgs.get("author") != null) {
+            return renderArgs.get("author", Author.class);
         }
-        String username = session.get("user");
-    //    if(username != null) {
-    //       return User.find("select username,password,email,isAdmin,integration,registerDate from user where username = ", username);
+        String authorname = session.get("author");
+    //    if(authorname != null) {
+    //       return Author.find("select authorname,password,email,isAdmin,integration,registerDate from author where authorname = ", authorname);
     //    } 
-	    if(username != null) {
-            return User.find("byUsername", username).first();
+	    if(authorname != null) {
+            return Author.find("byAuthorname", authorname).first();
         } 
         return null;
     }
@@ -48,10 +48,10 @@ public class Logined extends Controller {
 	/**添加管理员权限拦截，不是管理员，不能执行以下字符串数组内的方法*/
 	@Before(only={"music_cms","post_cms","deletePost","deleteComment","deal_refresh","auth_delete","addSeries","saveCarSeries"}) 
 	static void checkAdmin() { 
-		User user = connected();
-		if(user == null)
+		Author author = connected();
+		if(author == null)
 			Application.login();
-		if(user.isAdmin != true) {
+		if(author.isAdmin != true) {
 			notFound();
         }
 	}
@@ -96,11 +96,11 @@ public class Logined extends Controller {
   *在“更多留言”保存留言的方法
   */
     public static void savePost( Post post) {
-		User author=null;
-        String userName = session.get("user");  
+		Author author=null;
+        String authorName = session.get("author");  
 		
-		 if(userName != null) {
-            author=User.find("byUsername", userName).first();
+		 if(authorName != null) {
+            author=Author.find("byAuthorname", authorName).first();
         } 
 	
         post.author = author;  
@@ -115,11 +115,11 @@ public class Logined extends Controller {
   *在首页保存留言的方法
   */
 	public static void savePost2( Post post) {
-		User author=null;
-        String userName = session.get("user");  
+		Author author=null;
+        String authorName = session.get("author");  
 		
-		 if(userName != null) {
-            author=User.find("byUsername", userName).first();
+		 if(authorName != null) {
+            author=Author.find("byAuthorname", authorName).first();
         } 
 	
         post.author = author;  
@@ -134,11 +134,11 @@ public class Logined extends Controller {
   *管理员页面保存留言的方法
   */
 	 public static void savePostForCMS( Post post) {
-		User author=null;
-        String userName = session.get("user");  
+		Author author=null;
+        String authorName = session.get("author");  
 		
-		 if(userName != null) {
-            author=User.find("byUsername", userName).first();
+		 if(authorName != null) {
+            author=Author.find("byAuthorname", authorName).first();
         } 
 	
         post.author = author;  
@@ -162,10 +162,10 @@ public class Logined extends Controller {
   */
 	 public static void postComment(Long postId, String content ) {
         Post post = Post.findById(postId);
-		User author = null;
-		String userName = session.get("user");
-		 if(userName != null) {
-			 author=User.find("byUsername", userName).first();
+		Author author = null;
+		String authorName = session.get("author");
+		 if(authorName != null) {
+			 author=Author.find("byAuthorname", authorName).first();
         } 
 		Comment comment = new Comment(post,author,content);
 		comment.save();
@@ -178,10 +178,10 @@ public class Logined extends Controller {
   */
 	 public static void postComment2(Long postId, String content) {
         Post post = Post.findById(postId);
-		User author = null;
-		String userName = session.get("user");
-		 if(userName != null) {
-			 author=User.find("byUsername", userName).first();
+		Author author = null;
+		String authorName = session.get("author");
+		 if(authorName != null) {
+			 author=Author.find("byAuthorname", authorName).first();
         } 
 		Comment comment = new Comment(post,author,content);
 		comment.save();
@@ -194,10 +194,10 @@ public class Logined extends Controller {
   */
 	 public static void postCommentForCMS(Long postId, String content) {
         Post post = Post.findById(postId);
-		User author = null;
-		String userName = session.get("user");
-		 if(userName != null) {
-			 author=User.find("byUsername", userName).first();
+		Author author = null;
+		String authorName = session.get("author");
+		 if(authorName != null) {
+			 author=Author.find("byAuthorname", authorName).first();
         } 
 		Comment comment = new Comment(post,author,content);
 		comment.save();
@@ -232,10 +232,10 @@ public class Logined extends Controller {
         if(validation.hasErrors()) {
             render("@Logined.personal", verifyNewPassword);
          }
-		 User user = connected();
+		 Author author = connected();
 		 newPassword=Md5Util.getMD5Str(newPassword);				//MD5加密
-		 user.password=newPassword;
-		 user.save();
+		 author.password=newPassword;
+		 author.save();
 		 flash.success("修改成功" );
 		 personal();
 		}
@@ -331,17 +331,17 @@ public class Logined extends Controller {
 	 */
 	public static void addMusicComment(Long id, String musicCommentType ) {  
 		System.out.println("test-------------------------");
-		User author=null;
-        String userName = session.get("user");  
-		 if(userName != null) {
-            author=User.find("byUsername", userName).first();
+		Author author=null;
+        String authorName = session.get("author");  
+		 if(authorName != null) {
+            author=Author.find("byAuthorname", authorName).first();
         } 
 		Music music = Music.find("byId",id).first();	 
 		MusicComment musicComment = new MusicComment();
 		musicComment.commentContent = musicCommentType;
 		musicComment.commentTime=new Date();
 		musicComment.music=music;
-		musicComment.user=author;
+		musicComment.author=author;
 		author.integration=author.integration+2;
 		author.save();
 		musicComment.save();

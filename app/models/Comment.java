@@ -11,21 +11,21 @@ public class Comment extends Model {
  
 	@Required
     @ManyToOne
-    public User author;
+    public Author author;
     
     @Required
     public Date postedAt;
      
     @Lob
     @Required
-    @MaxSize(10000)
+    @MaxSize(1000)
     public String content;
     
     @ManyToOne
     @Required
     public Post post;
     
-    public Comment(Post post, User author, String content) {
+    public Comment(Post post, Author author, String content) {
         this.post = post;
         this.author = author;
         this.content = content;
