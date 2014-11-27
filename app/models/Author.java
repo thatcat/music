@@ -6,13 +6,13 @@ import javax.persistence.*;
 import play.data.binding.*;
 
 @Entity
-@Table(name="User")
-public class User extends Model {
+@Table(name="Author")
+public class Author extends Model {
     
     @Required
     @MaxSize(15)
     @MinSize(2)
-    public String username;
+    public String authorName;
     
     @Required
     @MaxSize(15)
@@ -31,15 +31,15 @@ public class User extends Model {
 	@As("yyyy-MM-dd HH:mm:ss")
 	public Date registerDate; //注册日期
 
-	@OneToMany(mappedBy="user", cascade=CascadeType.ALL)
+	@OneToMany(mappedBy="author", cascade=CascadeType.ALL)
     public List<MusicComment> musicComments;
    
-    public User() {
+    public Author() {
         this.isAdmin = false;
     }
 
     public String toString()  {
-        return username ;
+        return authorName ;
     }
 
     

@@ -23,7 +23,7 @@ public class MusicComment extends Model {
 
 	@Required
     @ManyToOne
-    public User user;
+    public Author author;
 
 
     public MusicComment() {
